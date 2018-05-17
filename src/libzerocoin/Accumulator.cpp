@@ -108,7 +108,7 @@ void AccumulatorWitness::resetValue(const Accumulator& checkpoint, const PublicC
 }
 
 void AccumulatorWitness::AddElement(const PublicCoin& c) {
-	if(element != c) {
+	if(element.getValue() != c.getValue()) {
 		witness += c;
 	}
 }
@@ -125,6 +125,12 @@ const CBigNum& AccumulatorWitness::getValue() const {
 bool AccumulatorWitness::VerifyWitness(const Accumulator& a, const PublicCoin &publicCoin) const {
 	Accumulator temp(witness);
 	temp += element;
+	if (!(temp == a)) {
+		LogPrintf("Accumulator does not verify.\n");
+	}
+	if (this->element != publicCoin) {
+		LogPrintf("Pubcoin does not verify.\n");
+	}
 	return (temp == a && this->element == publicCoin);
 }
 

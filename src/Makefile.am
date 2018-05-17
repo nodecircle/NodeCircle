@@ -92,6 +92,8 @@ endif
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
+  accumulatorcheckpoints.h \
+  accumulatorcheckpoints.json.h \
   accumulatormap.h \
   addrman.h \
   alert.h \
@@ -116,6 +118,7 @@ BITCOIN_CORE_H = \
   consensus/validation.h \
   compressor.h \
   primitives/block.h \
+  primitives/deterministicmint.h \
   primitives/transaction.h \
   primitives/zerocoin.h \
   core_io.h \
@@ -145,6 +148,7 @@ BITCOIN_CORE_H = \
   masternodeconfig.h \
   merkleblock.h \
   miner.h \
+  mintpool.h \
   mruset.h \
   netbase.h \
   net.h \
@@ -190,6 +194,8 @@ BITCOIN_CORE_H = \
   wallet.h \
   wallet_ismine.h \
   walletdb.h \
+  zphrtracker.h \
+  zphrwallet.h \
   zmq/zmqabstractnotifier.h \
   zmq/zmqconfig.h \
   zmq/zmqnotificationinterface.h \
@@ -266,13 +272,17 @@ libbitcoin_wallet_a_SOURCES = \
   masternode-sync.cpp \
   masternodeconfig.cpp \
   masternodeman.cpp \
+  mintpool.cpp \
   rpcdump.cpp \
+  primitives/deterministicmint.cpp \
   primitives/zerocoin.cpp \
   rpcwallet.cpp \
   kernel.cpp \
   wallet.cpp \
   wallet_ismine.cpp \
   walletdb.cpp \
+  zphrwallet.cpp \
+  zphrtracker.cpp \
   $(BITCOIN_CORE_H)
 
 # crypto primitives library
@@ -325,6 +335,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/ParamGeneration.h \
   libzerocoin/Params.h \
   libzerocoin/SerialNumberSignatureOfKnowledge.h \
+  libzerocoin/SpendType.h \
   libzerocoin/ZerocoinDefines.h \
   libzerocoin/Accumulator.cpp \
   libzerocoin/AccumulatorProofOfKnowledge.cpp \
@@ -341,6 +352,7 @@ libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
   accumulators.cpp \
+  accumulatorcheckpoints.cpp \
   accumulatormap.cpp \
   allocators.cpp \
   amount.cpp \
@@ -352,6 +364,7 @@ libbitcoin_common_a_SOURCES = \
   compressor.cpp \
   consensus/merkle.cpp \
   primitives/block.cpp \
+  primitives/deterministicmint.cpp \
   primitives/transaction.cpp \
   primitives/zerocoin.cpp \
   core_read.cpp \

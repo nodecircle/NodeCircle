@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2016-2017 The PIVX developers
+// Copyright (c) 2016-2018 The PIVX developers
 // Copyright (c) 2017 The Phore developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -41,6 +41,7 @@ class CTxMemPoolEntry
 private:
     CTransaction tx;
     CAmount nFee;              //!< Cached to avoid expensive parent-transaction lookups
+    size_t nTxSize;       //! ... and avoid recomputing tx size
     size_t nTxCost;            //!< ... and avoid recomputing tx cost (also used for GetTxSize())
     size_t nModSize;           //!< ... and modified size for priority
     int64_t nTime;             //!< Local time when entering the mempool
@@ -134,6 +135,7 @@ public:
     void removeForBlock(const std::vector<CTransaction>& vtx, unsigned int nBlockHeight, std::list<CTransaction>& conflicts);
     void clear();
     void queryHashes(std::vector<uint256>& vtxid);
+    void getTransactions(std::set<uint256>& setTxid);
     void pruneSpent(const uint256& hash, CCoins& coins);
     unsigned int GetTransactionsUpdated() const;
     void AddTransactionsUpdated(unsigned int n);

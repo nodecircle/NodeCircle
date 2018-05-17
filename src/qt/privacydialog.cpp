@@ -21,6 +21,8 @@
 #include <QSettings>
 #include <utilmoneystr.h>
 #include <QtWidgets>
+#include <primitives/deterministicmint.h>
+#include <accumulators.h>
 
 PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent),
                                                           ui(new Ui::PrivacyDialog),
@@ -105,14 +107,8 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent),
     ui->WarningLabel->hide();    // Explanatory text visible in QT-Creator
     ui->dummyHideWidget->hide(); // Dummy widget with elements to hide
 
-    //temporary disable for maintenance
-    if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
-        ui->pushButtonMintzPHR->setEnabled(false);
-        ui->pushButtonMintzPHR->setToolTip(tr("zPHR is currently disabled due to maintenance."));
-
-        ui->pushButtonSpendzPHR->setEnabled(false);
-        ui->pushButtonSpendzPHR->setToolTip(tr("zPHR is currently disabled due to maintenance."));
-    }
+    // Set labels/buttons depending on SPORK_16 status
+    updateSPORK16Status();
 }
 
 PrivacyDialog::~PrivacyDialog()
@@ -196,7 +192,7 @@ void PrivacyDialog::on_pushButtonMintzPHR_clicked()
     int64_t nTime = GetTimeMillis();
 
     CWalletTx wtx;
-    vector<CZerocoinMint> vMints;
+    vector<CDeterministicMint> vMints;
     string strError = pwalletMain->MintZerocoin(nAmount, wtx, vMints, CoinControlDialog::coinControl);
 
     // Return if something went wrong during minting
@@ -217,13 +213,12 @@ void PrivacyDialog::on_pushButtonMintzPHR_clicked()
     QString strStats = "";
     ui->TEMintStatus->setPlainText(strStatsHeader);
 
-    for (CZerocoinMint mint : vMints) {
-        boost::this_thread::sleep(boost::posix_time::milliseconds(100));
-        strStats = strStats + QString::number(mint.GetDenomination()) + " ";
-        ui->TEMintStatus->setPlainText(strStatsHeader + strStats);
-        ui->TEMintStatus->repaint ();
-
+    for (CDeterministicMint dMint : vMints) {
+        strStats = strStats + QString::number(dMint.GetDenomination()) + " ";
     }
+
+    ui->TEMintStatus->setPlainText(strStatsHeader + strStats);
+    ui->TEMintStatus->repaint ();
 
     ui->TEMintStatus->verticalScrollBar()->setValue(ui->TEMintStatus->verticalScrollBar()->maximum()); // Automatically scroll to end of text
 
@@ -242,7 +237,7 @@ void PrivacyDialog::on_pushButtonMintReset_clicked()
     ui->TEMintStatus->repaint ();
 
     int64_t nTime = GetTimeMillis();
-    string strResetMintResult = pwalletMain->ResetMintZerocoin(false); // do not do the extended search from GUI
+    string strResetMintResult = pwalletMain->ResetMintZerocoin(); // do not do the extended search from GUI
     double fDuration = (double)(GetTimeMillis() - nTime)/1000.0;
     ui->TEMintStatus->setPlainText(QString::fromStdString(strResetMintResult) + tr("Duration: ") + QString::number(fDuration) + tr(" sec.\n"));
     ui->TEMintStatus->repaint ();
@@ -411,10 +406,30 @@ void PrivacyDialog::sendzPHR()
     ui->TEMintStatus->setPlainText(tr("Spending Zerocoin.\nComputationally expensive, might need several minutes depending on the selected Security Level and your hardware. \nPlease be patient..."));
     ui->TEMintStatus->repaint();
 
-    // use mints from zPhr selector if applicable
+    // use mints from zPHR selector if applicable
+    vector<CMintMeta> vMintsToFetch;
     vector<CZerocoinMint> vMintsSelected;
-    if (!ZPhrControlDialog::listSelectedMints.empty()) {
-        vMintsSelected = ZPhrControlDialog::GetSelectedMints();
+    if (!ZPhrControlDialog::setSelectedMints.empty()) {
+        vMintsToFetch = ZPhrControlDialog::GetSelectedMints();
+
+        for (auto& meta : vMintsToFetch) {
+            if (meta.nVersion < libzerocoin::PrivateCoin::PUBKEY_VERSION) {
+                //version 1 coins have to use full security level to successfully spend.
+                if (nSecurityLevel < 100) {
+                    QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Version 1 zPHR require a security level of 100 to successfully spend."), QMessageBox::Ok, QMessageBox::Ok);
+                    ui->TEMintStatus->setPlainText(tr("Failed to spend zPHR"));
+                    ui->TEMintStatus->repaint();
+                    return;
+                }
+            }
+            CZerocoinMint mint;
+            if (!pwalletMain->GetMint(meta.hashSerial, mint)) {
+                ui->TEMintStatus->setPlainText(tr("Failed to fetch mint associated with serial hash"));
+                ui->TEMintStatus->repaint();
+                return;
+            }
+            vMintsSelected.emplace_back(mint);
+        }
     }
 
     // Spend zPHR
@@ -432,6 +447,13 @@ void PrivacyDialog::sendzPHR()
 
     // Display errors during spend
     if (!fSuccess) {
+        if (receipt.GetStatus() == ZPHR_SPEND_V1_SEC_LEVEL) {
+            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Version 1 zPHR require a security level of 100 to successfully spend."), QMessageBox::Ok, QMessageBox::Ok);
+            ui->TEMintStatus->setPlainText(tr("Failed to spend zPHR"));
+            ui->TEMintStatus->repaint();
+            return;
+        }
+
         int nNeededSpends = receipt.GetNeededSpends(); // Number of spends we would need for this transaction
         const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zPHR transaction
         if (nNeededSpends > nMaxSpends) {
@@ -460,7 +482,7 @@ void PrivacyDialog::sendzPHR()
     }
 
     // Clear zphr selector in case it was used
-    ZPhrControlDialog::listSelectedMints.clear();
+    ZPhrControlDialog::setSelectedMints.clear();
     ui->labelzPHRSelected_int->setText(QString("0"));
     ui->labelQuantitySelected_int->setText(QString("0"));
 
@@ -469,11 +491,12 @@ void PrivacyDialog::sendzPHR()
     CAmount nValueIn = 0;
     int nCount = 0;
     for (CZerocoinSpend spend : receipt.GetSpends()) {
-        strStats += tr("zPhr Spend #: ") + QString::number(nCount) + ", ";
+        strStats += tr("zPHR Spend #: ") + QString::number(nCount) + ", ";
         strStats += tr("denomination: ") + QString::number(spend.GetDenomination()) + ", ";
         strStats += tr("serial: ") + spend.GetSerial().ToString().c_str() + "\n";
         strStats += tr("Spend is 1 of : ") + QString::number(spend.GetMintCount()) + " mints in the accumulator\n";
         nValueIn += libzerocoin::ZerocoinDenominationToAmount(spend.GetDenomination());
+        ++nCount;
     }
 
     CAmount nValueOut = 0;
@@ -484,7 +507,7 @@ void PrivacyDialog::sendzPHR()
         strStats += tr("address: ");
         CTxDestination dest;
         if(txout.scriptPubKey.IsZerocoinMint())
-            strStats += tr("zPhr Mint");
+            strStats += tr("zPHR Mint");
         else if(ExtractDestination(txout.scriptPubKey, dest))
             strStats += tr(EncodeDestination(dest).c_str());
         strStats += "\n";
@@ -583,9 +606,6 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
     currentWatchUnconfBalance = watchUnconfBalance;
     currentWatchImmatureBalance = watchImmatureBalance;
 
-    CWalletDB walletdb(pwalletMain->strWalletFile);
-    list<CZerocoinMint> listMints = walletdb.ListMintedCoins(true, false, true);
-
     std::map<libzerocoin::CoinDenomination, CAmount> mapDenomBalances;
     std::map<libzerocoin::CoinDenomination, int> mapUnconfirmed;
     std::map<libzerocoin::CoinDenomination, int> mapImmature;
@@ -595,29 +615,19 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
         mapImmature.insert(make_pair(denom, 0));
     }
 
-    int nBestHeight = chainActive.Height();
-    for (auto& mint : listMints){
+    std::vector<CMintMeta> vMints = pwalletMain->zphrTracker->GetMints(false);
+    map<libzerocoin::CoinDenomination, int> mapMaturityHeights = GetMintMaturityHeight();
+    for (CMintMeta& meta : vMints){
         // All denominations
-        mapDenomBalances.at(mint.GetDenomination())++;
-
-        if (!mint.GetHeight() || chainActive.Height() - mint.GetHeight() <= Params().Zerocoin_MintRequiredConfirmations()) {
+        mapUnconfirmed.at(meta.denom)++;
+        if (!meta.nHeight || chainActive.Height() - meta.nHeight <= Params().Zerocoin_MintRequiredConfirmations()) {
             // All unconfirmed denominations
-            mapUnconfirmed.at(mint.GetDenomination())++;
-        }
-        else {
-            // After a denomination is confirmed it might still be immature because < 3 of the same denomination were minted after it
-            CBlockIndex *pindex = chainActive[mint.GetHeight() + 1];
-            int nHeight2CheckpointsDeep = nBestHeight - (nBestHeight % 10) - 20;
-            int nMintsAdded = 0;
-            while (pindex->nHeight < nHeight2CheckpointsDeep) { //at least 2 checkpoints from the top block
-                nMintsAdded += count(pindex->vMintDenominationsInBlock.begin(), pindex->vMintDenominationsInBlock.end(), mint.GetDenomination());
-                if (nMintsAdded >= Params().Zerocoin_RequiredAccumulation())
-                    break;
-                pindex = chainActive[pindex->nHeight + 1];
-            }
-            if (nMintsAdded < Params().Zerocoin_RequiredAccumulation()){
-                // Immature denominations
-                mapImmature.at(mint.GetDenomination())++;
+            mapUnconfirmed.at(meta.denom)++;
+        } else {
+            if (meta.denom == libzerocoin::CoinDenomination::ZQ_ERROR) {
+                mapImmature.at(meta.denom)++;
+            } else if (meta.nHeight >= mapMaturityHeights.at(meta.denom)) {
+                mapImmature.at(meta.denom)++;
             }
         }
     }
@@ -627,6 +637,9 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
     int64_t nUnconfirmed = 0;
     int64_t nImmature = 0;
     QString strDenomStats, strUnconfirmed = "";
+
+    // Update/enable labels and buttons depending on the current SPORK_16 status
+    updateSPORK16Status();
 
     for (const auto& denom : libzerocoin::zerocoinDenomList) {
         nCoins = libzerocoin::ZerocoinDenominationToInt(denom);
@@ -679,7 +692,7 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
                 break;
         }
     }
-    CAmount matureZerocoinBalance = zerocoinBalance - immatureZerocoinBalance;
+    CAmount matureZerocoinBalance = zerocoinBalance - immatureZerocoinBalance - unconfirmedZerocoinBalance;
     CAmount nLockedBalance = 0;
     if (walletModel) {
         nLockedBalance = walletModel->getLockedBalance();
@@ -713,5 +726,29 @@ void PrivacyDialog::keyPressEvent(QKeyEvent* event)
         this->QDialog::keyPressEvent(event);
     } else {
         event->ignore();
+    }
+}
+
+void PrivacyDialog::updateSPORK16Status()
+{
+    // Update/enable labels, buttons and tooltips depending on the current SPORK_16 status
+    bool fButtonsEnabled =  ui->pushButtonMintzPHR->isEnabled();
+    bool fMaintenanceMode = GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE);
+    if (fMaintenanceMode && fButtonsEnabled) {
+        // Mint zPHR
+        ui->pushButtonMintzPHR->setEnabled(false);
+        ui->pushButtonMintzPHR->setToolTip(tr("zPHR is currently disabled due to maintenance."));
+
+        // Spend zPHR
+        ui->pushButtonSpendzPHR->setEnabled(false);
+        ui->pushButtonSpendzPHR->setToolTip(tr("zPHR is currently disabled due to maintenance."));
+    } else if (!fMaintenanceMode && !fButtonsEnabled) {
+        // Mint zPHR
+        ui->pushButtonMintzPHR->setEnabled(true);
+        ui->pushButtonMintzPHR->setToolTip(tr("PrivacyDialog", "Enter an amount of PHR to convert to zPHR", 0));
+
+        // Spend zPHR
+        ui->pushButtonSpendzPHR->setEnabled(true);
+        ui->pushButtonSpendzPHR->setToolTip(tr("Spend Zerocoin. Without 'Pay To:' address creates payments to yourself."));
     }
 }

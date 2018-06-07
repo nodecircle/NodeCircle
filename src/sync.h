@@ -183,7 +183,7 @@ typedef CMutexLock<CCriticalSection> CCriticalBlock;
         LeaveCritical();           \
     }
 
-class CSemaphore
+class CSemanodecircle
 {
 private:
     boost::condition_variable condition;
@@ -191,7 +191,7 @@ private:
     int value;
 
 public:
-    CSemaphore(int init) : value(init) {}
+    CSemanodecircle(int init) : value(init) {}
 
     void wait()
     {
@@ -221,11 +221,11 @@ public:
     }
 };
 
-/** RAII-style semaphore lock */
-class CSemaphoreGrant
+/** RAII-style semanodecircle lock */
+class CSemanodecircleGrant
 {
 private:
-    CSemaphore* sem;
+    CSemanodecircle* sem;
     bool fHaveGrant;
 
 public:
@@ -252,7 +252,7 @@ public:
         return fHaveGrant;
     }
 
-    void MoveTo(CSemaphoreGrant& grant)
+    void MoveTo(CSemanodecircleGrant& grant)
     {
         grant.Release();
         grant.sem = sem;
@@ -261,9 +261,9 @@ public:
         fHaveGrant = false;
     }
 
-    CSemaphoreGrant() : sem(NULL), fHaveGrant(false) {}
+    CSemanodecircleGrant() : sem(NULL), fHaveGrant(false) {}
 
-    CSemaphoreGrant(CSemaphore& sema, bool fTry = false) : sem(&sema), fHaveGrant(false)
+    CSemanodecircleGrant(CSemanodecircle& sema, bool fTry = false) : sem(&sema), fHaveGrant(false)
     {
         if (fTry)
             TryAcquire();
@@ -271,7 +271,7 @@ public:
             Acquire();
     }
 
-    ~CSemaphoreGrant()
+    ~CSemanodecircleGrant()
     {
         Release();
     }

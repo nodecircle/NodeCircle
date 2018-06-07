@@ -34,7 +34,7 @@ using namespace std;
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// PhoreMiner
+// NodeCircleMiner
 //
 
 //
@@ -501,7 +501,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != chainActive.Tip()->GetBlockHash())
-            return error("PhoreMiner : generated block is stale");
+            return error("NodeCircleMiner : generated block is stale");
     }
 
     // Remove key from key pool
@@ -519,7 +519,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     // Process this block the same as if we had received it from another node
     CValidationState state;
     if (!ProcessNewBlock(state, NULL, pblock))
-        return error("PhoreMiner : ProcessNewBlock, block not accepted");
+        return error("NodeCircleMiner : ProcessNewBlock, block not accepted");
 
     for (CNode* node : vNodes) {
         node->PushInventory(CInv(MSG_BLOCK, pblock->GetHash()));
@@ -538,9 +538,9 @@ bool fGenerateBitcoins = false;
 
 void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 {
-    LogPrintf("PhoreMiner started\n");
+    LogPrintf("NodeCircleMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("phore-miner");
+    RenameThread("nodecircle-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
@@ -605,7 +605,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             continue;
         }
 
-        LogPrintf("Running PhoreMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
+        LogPrintf("Running NodeCircleMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
             ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //

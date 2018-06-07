@@ -264,10 +264,10 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop Phore server.");
+            "\nStop NodeCircle server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "Phore server stopping";
+    return "NodeCircle server stopping";
 }
 
 
@@ -350,36 +350,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* Phore features */
-        {"phore", "masternode", &masternode, true, true, false},
-        {"phore", "listmasternodes", &listmasternodes, true, true, false},
-        {"phore", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"phore", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"phore", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"phore", "masternodedebug", &masternodedebug, true, true, false},
-        {"phore", "startmasternode", &startmasternode, true, true, false},
-        {"phore", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"phore", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"phore", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"phore", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"phore", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"phore", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"phore", "mnbudget", &mnbudget, true, true, false},
-        {"phore", "preparebudget", &preparebudget, true, true, false},
-        {"phore", "submitbudget", &submitbudget, true, true, false},
-        {"phore", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"phore", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"phore", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"phore", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"phore", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"phore", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"phore", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"phore", "checkbudgets", &checkbudgets, true, true, false},
-        {"phore", "mnsync", &mnsync, true, true, false},
-        {"phore", "spork", &spork, true, true, false},
-        {"phore", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* NodeCircle features */
+        {"nodecircle", "masternode", &masternode, true, true, false},
+        {"nodecircle", "listmasternodes", &listmasternodes, true, true, false},
+        {"nodecircle", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"nodecircle", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"nodecircle", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"nodecircle", "masternodedebug", &masternodedebug, true, true, false},
+        {"nodecircle", "startmasternode", &startmasternode, true, true, false},
+        {"nodecircle", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"nodecircle", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"nodecircle", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"nodecircle", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"nodecircle", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"nodecircle", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"nodecircle", "mnbudget", &mnbudget, true, true, false},
+        {"nodecircle", "preparebudget", &preparebudget, true, true, false},
+        {"nodecircle", "submitbudget", &submitbudget, true, true, false},
+        {"nodecircle", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"nodecircle", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"nodecircle", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"nodecircle", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"nodecircle", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"nodecircle", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"nodecircle", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"nodecircle", "checkbudgets", &checkbudgets, true, true, false},
+        {"nodecircle", "mnsync", &mnsync, true, true, false},
+        {"nodecircle", "spork", &spork, true, true, false},
+        {"nodecircle", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"phore", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"nodecircle", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -606,7 +606,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> phore-cli " + methodname + " " + args + "\n";
+    return "> nodecircle-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/phore-config.h"
+#include "config/nodecircle-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -87,10 +87,10 @@ void OptionsModel::Init()
         settings.setValue("nPreferredDenom", 0);
     nPreferredDenom = settings.value("nPreferredDenom", "0").toLongLong();
 
-    if (!settings.contains("nAnonymizePhoreAmount"))
-        settings.setValue("nAnonymizePhoreAmount", 1000);
+    if (!settings.contains("nAnonymizeNodeCircleAmount"))
+        settings.setValue("nAnonymizeNodeCircleAmount", 1000);
 
-    nAnonymizePhoreAmount = settings.value("nAnonymizePhoreAmount").toLongLong();
+    nAnonymizeNodeCircleAmount = settings.value("nAnonymizeNodeCircleAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -164,8 +164,8 @@ void OptionsModel::Init()
         SoftSetArg("-zeromintpercentage", settings.value("nZeromintPercentage").toString().toStdString());
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
-    if (settings.contains("nAnonymizePhoreAmount"))
-        SoftSetArg("-anonymizephoreamount", settings.value("nAnonymizePhoreAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeNodeCircleAmount"))
+        SoftSetArg("-anonymizenodecircleamount", settings.value("nAnonymizeNodeCircleAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -176,7 +176,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in phore.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in nodecircle.cpp during shotdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())
@@ -256,8 +256,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return QVariant(nZeromintPercentage);
         case ZeromintPrefDenom:
             return QVariant(nPreferredDenom);
-        case AnonymizePhoreAmount:
-            return QVariant(nAnonymizePhoreAmount);
+        case AnonymizeNodeCircleAmount:
+            return QVariant(nAnonymizeNodeCircleAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -386,10 +386,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             emit hideZeroBalancesChanged(fHideZeroBalances);
             break;
 
-        case AnonymizePhoreAmount:
-            nAnonymizePhoreAmount = value.toInt();
-            settings.setValue("nAnonymizePhoreAmount", nAnonymizePhoreAmount);
-            emit anonymizePhoreAmountChanged(nAnonymizePhoreAmount);
+        case AnonymizeNodeCircleAmount:
+            nAnonymizeNodeCircleAmount = value.toInt();
+            settings.setValue("nAnonymizeNodeCircleAmount", nAnonymizeNodeCircleAmount);
+            emit anonymizeNodeCircleAmountChanged(nAnonymizeNodeCircleAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

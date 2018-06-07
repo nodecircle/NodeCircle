@@ -1,0 +1,11 @@
+[Protocol]
+exec=nodecircle-qt '%u'
+protocol=nodecircle
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

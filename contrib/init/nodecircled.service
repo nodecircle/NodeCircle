@@ -1,0 +1,26 @@
+[Unit]
+Description=NodeCircle's distributed currency daemon
+After=network.target
+
+[Service]
+User=nodecircle
+Group=nodecircle
+
+Type=forking
+PIDFile=/var/lib/nodecircled/nodecircled.pid
+
+ExecStart=/usr/bin/nodecircled -daemon -pid=/var/lib/nodecircled/nodecircled.pid \
+          -conf=/etc/nodecircle/nodecircle.conf -datadir=/var/lib/nodecircled
+
+ExecStop=-/usr/bin/nodecircle-cli -conf=/etc/nodecircle/nodecircle.conf \
+         -datadir=/var/lib/nodecircled stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

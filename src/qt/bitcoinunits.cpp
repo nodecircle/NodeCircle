@@ -41,11 +41,11 @@ QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
     case PHR:
-        return QString("phore");
+        return QString("nodecircle");
     case mPHR:
-        return QString("mphore");
+        return QString("mnodecircle");
     case uPHR:
-        return QString::fromUtf8("uphore");
+        return QString::fromUtf8("unodecircle");
     default:
         return QString("???");
     }

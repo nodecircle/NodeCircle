@@ -126,7 +126,7 @@ public:
 };
 
 /**
- * Phore RPC command dispatcher.
+ * NodeCircle RPC command dispatcher.
  */
 class CRPCTable
 {

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=NodeCircle
+Comment=NodeCircle P2P Cryptocurrency
+Comment[fr]=NodeCircle, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=NodeCircle, eşten eşe kriptografik sanal para birimi
+Exec=nodecircle-qt %u
+Terminal=false
+Type=Application
+Icon=nodecircle128
+MimeType=x-scheme-handler/nodecircle;
+Categories=Office;Finance;

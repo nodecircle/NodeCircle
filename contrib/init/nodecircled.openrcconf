@@ -1,0 +1,26 @@
+# /etc/conf.d/nodecircled: config file for /etc/init.d/nodecircled
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/nodecircle/nodecircle.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/nodecircled"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/nodecircled.pid"
+
+# Where to write nodecircled data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/nodecircled"
+
+# User and group to own nodecircled process
+#BITCOIND_USER="nodecircle"
+#BITCOIND_GROUP="nodecircle"
+
+# Path to nodecircled executable
+#BITCOIND_BIN="/usr/bin/nodecircled"
+
+# Nice value to run nodecircled under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

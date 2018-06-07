@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: phored.service
-Upstart: phored.conf
-OpenRC:  phored.openrc
-         phored.openrcconf
-CentOS:  phored.init
+SystemD: nodecircled.service
+Upstart: nodecircled.conf
+OpenRC:  nodecircled.openrc
+         nodecircled.openrcconf
+CentOS:  nodecircled.init
 
 have been made available to assist packagers in creating node packages here.
 

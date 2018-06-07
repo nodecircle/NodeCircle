@@ -133,13 +133,13 @@
        <item>
         <widget class="QCheckBox" name="checkBoxZeromintEnable">
          <property name="toolTip">
-          <string>Enable automatic minting of NodeCircle units to zPHR</string>
+          <string>Enable automatic minting of NodeCircle units to zNCX</string>
          </property>
          <property name="layoutDirection">
           <enum>Qt::LeftToRight</enum>
          </property>
          <property name="text">
-          <string>Enable zPHR Automint</string>
+          <string>Enable zNCX Automint</string>
          </property>
         </widget>
        </item>
@@ -148,10 +148,10 @@
          <item>
           <widget class="QLabel" name="percentage_label">
            <property name="toolTip">
-            <string>Percentage of incoming PHR which get automatically converted to zPHR via Zerocoin Protocol (min: 10%)</string>
+            <string>Percentage of incoming NCX which get automatically converted to zNCX via Zerocoin Protocol (min: 10%)</string>
            </property>
            <property name="text">
-            <string>Percentage of autominted zPHR</string>
+            <string>Percentage of autominted zNCX</string>
            </property>
           </widget>
          </item>
@@ -181,10 +181,10 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Wait with automatic conversion to Zerocoin until enough PHR for this denomination is available</string>
+            <string>Wait with automatic conversion to Zerocoin until enough NCX for this denomination is available</string>
            </property>
            <property name="text">
-            <string>Preferred Automint zPHR Denomination</string>
+            <string>Preferred Automint zNCX Denomination</string>
            </property>
           </widget>
          </item>
@@ -197,7 +197,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Wait with automatic conversion to Zerocoin until enough PHR for this denomination is available</string>
+            <string>Wait with automatic conversion to Zerocoin until enough NCX for this denomination is available</string>
            </property>
            <property name="maxVisibleItems">
             <number>9</number>

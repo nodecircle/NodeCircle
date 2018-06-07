@@ -176,7 +176,7 @@
         <translation>Потвърдете шифрирането на портфейла</translation>
     </message>
     <message>
-        <source>NodeCircle will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PHRs from being stolen by malware infecting your computer.</source>
+        <source>NodeCircle will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your NCXs from being stolen by malware infecting your computer.</source>
         <translation>NodeCircle сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия NodeCircle от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
@@ -184,8 +184,8 @@
         <translation>Сигурни ли сте, че искате да шифрирате вашия портфейл?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PHR&lt;/b&gt;!</source>
-        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ PHR&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NCX&lt;/b&gt;!</source>
+        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ NCX&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -618,8 +618,8 @@
         <translation>&amp;Поверителност</translation>
     </message>
     <message>
-        <source>Privacy Action for zPHR and Obfuscation</source>
-        <translation>Поверителни действия за zPHR и Обфускация</translation>
+        <source>Privacy Action for zNCX and Obfuscation</source>
+        <translation>Поверителни действия за zNCX и Обфускация</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -1548,32 +1548,32 @@ Please check the address and try again.</source>
         <translation>Изберете ниво на поверителност.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 PHR</source>
-        <translation>Използвай 2 различни мастърноуда за смесване на средства над 10000 PHR</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 NCX</source>
+        <translation>Използвай 2 различни мастърноуда за смесване на средства над 10000 NCX</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 PHR</source>
-        <translation>Използвай 8 различни мастърноуда за да смесите средства до 10000 PHR</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 NCX</source>
+        <translation>Използвай 8 различни мастърноуда за да смесите средства до 10000 NCX</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Използвай 16 различни мастърноуда</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PHR to anonymize 10000 PHR</source>
-        <translation>Това е най-бързия метод и ще струва около 0.025 PHR за да скриете 10000 PHR</translation>
+        <source>This option is the quickest and will cost about ~0.025 NCX to anonymize 10000 NCX</source>
+        <translation>Това е най-бързия метод и ще струва около 0.025 NCX за да скриете 10000 NCX</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PHR to anonymize 10000 PHR</source>
-        <translation>Тази опция е сравнително бърза и ще струва около 0.05 PHR за да скриете 10000 PHR</translation>
+        <source>This option is moderately fast and will cost about 0.05 NCX to anonymize 10000 NCX</source>
+        <translation>Тази опция е сравнително бърза и ще струва около 0.05 NCX за да скриете 10000 NCX</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Това е най-бавния и най-сигурен вариант за скриване на PHR. Използването й ще струва</translation>
+        <translation>Това е най-бавния и най-сигурен вариант за скриване на NCX. Използването й ще струва</translation>
     </message>
     <message>
-        <source>0.1 PHR per 10000 PHR you anonymize.</source>
-        <translation>0.1 PHR за 10000 скрити PHR</translation>
+        <source>0.1 NCX per 10000 NCX you anonymize.</source>
+        <translation>0.1 NCX за 10000 скрити NCX</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1712,20 +1712,20 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</so
 https://www.transifex.com/nodecircle-project/nodecircle-project-translations</translation>
     </message>
     <message>
-        <source>Percentage of incoming PHR which get automatically converted to zPHR via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент от входящите PHR, който автоматично да се конвертира в zPHR посредтвом Zerocoin Протокола (мин: 10%)</translation>
+        <source>Percentage of incoming NCX which get automatically converted to zNCX via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент от входящите NCX, който автоматично да се конвертира в zNCX посредтвом Zerocoin Протокола (мин: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPHR</source>
-        <translation>Процент автоматично сечени zPHR</translation>
+        <source>Percentage of autominted zNCX</source>
+        <translation>Процент автоматично сечени zNCX</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PHR for this denomination is available</source>
-        <translation>Не бързай с автоматичното конвертиране в zPHR докато не се съберат достатъчно PHR за тази деноминация</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough NCX for this denomination is available</source>
+        <translation>Не бързай с автоматичното конвертиране в zNCX докато не се съберат достатъчно NCX за тази деноминация</translation>
     </message>
     <message>
-        <source>Preferred Automint zPHR Denomination</source>
-        <translation>Предпочитани деноминации, в които да се сече автоматичен zPHR</translation>
+        <source>Preferred Automint zNCX Denomination</source>
+        <translation>Предпочитани деноминации, в които да се сече автоматичен zNCX</translation>
     </message>
     <message>
         <source>Connect to the NodeCircle network through a SOCKS5 proxy.</source>
@@ -1859,8 +1859,8 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>От</translation>
     </message>
     <message>
-        <source>PHR Balances</source>
-        <translation>PHR Баланс</translation>
+        <source>NCX Balances</source>
+        <translation>NCX Баланс</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1927,12 +1927,12 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>Комбиниран общ баланс (само озрелите монети)</translation>
     </message>
     <message>
-        <source>PHR:</source>
-        <translation>PHR:</translation>
+        <source>NCX:</source>
+        <translation>NCX:</translation>
     </message>
     <message>
-        <source>zPHR:</source>
-        <translation>zPHR:</translation>
+        <source>zNCX:</source>
+        <translation>zNCX:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -2060,12 +2060,12 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>PHR which were anonymized via Zerocin Protocol</source>
-        <translation>PHR скрити посредством Зерокойн протокола</translation>
+        <source>NCX which were anonymized via Zerocin Protocol</source>
+        <translation>NCX скрити посредством Зерокойн протокола</translation>
     </message>
     <message>
-        <source>Zerocoin PHR (zPHR)</source>
-        <translation>Zerocoin PHR (zPHR)</translation>
+        <source>Zerocoin NCX (zNCX)</source>
+        <translation>Zerocoin NCX (zNCX)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -2077,7 +2077,7 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
     </message>
     <message>
         <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>Въведете колко PHR  да се конвертират в zPHR</translation>
+        <translation>Въведете колко NCX  да се конвертират в zNCX</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2088,16 +2088,16 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>0</translation>
     </message>
     <message>
-        <source>zPHR</source>
-        <translation>zPHR</translation>
+        <source>zNCX</source>
+        <translation>zNCX</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
         <translation>Налични за сечене:</translation>
     </message>
     <message>
-        <source>0.000 000 00 PHR</source>
-        <translation>0.000 000 00 PHR</translation>
+        <source>0.000 000 00 NCX</source>
+        <translation>0.000 000 00 NCX</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2133,11 +2133,11 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
     </message>
     <message>
         <source>zPhr Control</source>
-        <translation>zPHR Контрол</translation>
+        <translation>zNCX Контрол</translation>
     </message>
     <message>
         <source>zPhr Selected:</source>
-        <translation>Избрани zPHR:</translation>
+        <translation>Избрани zNCX:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2156,8 +2156,8 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>Налични:</translation>
     </message>
     <message>
-        <source>0 zPHR</source>
-        <translation>0 zPHR</translation>
+        <source>0 zNCX</source>
+        <translation>0 zNCX</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2209,7 +2209,7 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
     </message>
     <message>
         <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Изсечи zPHR от рестото (ще струва допълнително заради таксите)</translation>
+        <translation>Изсечи zNCX от рестото (ще струва допълнително заради таксите)</translation>
     </message>
     <message>
         <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
@@ -2396,8 +2396,8 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>Успешно изсечени</translation>
     </message>
     <message>
-        <source> zPHR in </source>
-        <translation>zPHR в</translation>
+        <source> zNCX in </source>
+        <translation>zNCX в</translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2475,7 +2475,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPhr Spend #: </source>
-        <translation>zPHR Похарчени #:</translation>
+        <translation>zNCX Похарчени #:</translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2499,7 +2499,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPhr Mint</source>
-        <translation>Сечене на zPHR</translation>
+        <translation>Сечене на zNCX</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -3127,8 +3127,8 @@ Please be patient...</source>
         <translation>Размер на UTXO:</translation>
     </message>
     <message>
-        <source>0 PHR</source>
-        <translation>0 PHR</translation>
+        <source>0 NCX</source>
+        <translation>0 NCX</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3179,12 +3179,12 @@ Please be patient...</source>
         <translation>Автоматично избрани монети</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPHRs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPHRs in fee,&lt;br /&gt;while "at least" pays 1000 uPHRs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uPHR и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uPHR входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uPHR. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uNCXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uNCXs in fee,&lt;br /&gt;while "at least" pays 1000 uNCXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uNCX и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uNCX входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uNCX. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPHRs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPHRs in fee,&lt;br /&gt;while "total at least" pays 1000 uPHRs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uPHR и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uPHR входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uPHR. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uNCXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uNCXs in fee,&lt;br /&gt;while "total at least" pays 1000 uNCXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uNCX и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uNCX входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uNCX. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for NodeCircle transactions than the network can process.</source>
@@ -3235,8 +3235,8 @@ Please be patient...</source>
         <translation>Добави Получател</translation>
     </message>
     <message>
-        <source>Anonymized PHR</source>
-        <translation>Анонимизиран PHR</translation>
+        <source>Anonymized NCX</source>
+        <translation>Анонимизиран NCX</translation>
     </message>
     <message>
         <source>SwiftTX</source>
@@ -3296,7 +3296,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Warning: Invalid NodeCircle address</source>
-        <translation>Предупреждение: Невалиден PHR адрес</translation>
+        <translation>Предупреждение: Невалиден NCX адрес</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -3956,23 +3956,23 @@ Please be patient...</source>
     </message>
     <message>
         <source>Converted Phr to zPhr</source>
-        <translation>Конвертиран PHR във zPHR</translation>
+        <translation>Конвертиран NCX във zNCX</translation>
     </message>
     <message>
         <source>Spent zPhr</source>
-        <translation>Похарчени zPHR</translation>
+        <translation>Похарчени zNCX</translation>
     </message>
     <message>
         <source>Received Phr from zPhr</source>
-        <translation>Получен PHR от zPHR</translation>
+        <translation>Получен NCX от zNCX</translation>
     </message>
     <message>
         <source>Minted Change as zPhr from zPhr Spend</source>
-        <translation>Исечено ресто като zPHR от похарчените zPHR</translation>
+        <translation>Исечено ресто като zNCX от похарчените zNCX</translation>
     </message>
     <message>
         <source>Converted zPhr to Phr</source>
-        <translation>Конвертирани zPHR в PHR</translation>
+        <translation>Конвертирани zNCX в NCX</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -3980,7 +3980,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPhr Accumulator</source>
-        <translation>zPHR Акумулатор</translation>
+        <translation>zNCX Акумулатор</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4087,7 +4087,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Received Phr from zPhr</source>
-        <translation>Получен PHR от zPHR</translation>
+        <translation>Получен NCX от zNCX</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4099,7 +4099,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zPhr</source>
-        <translation>Харчене на Zerocoin, Ресто в zPHR</translation>
+        <translation>Харчене на Zerocoin, Ресто в zNCX</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4215,8 +4215,8 @@ Please be patient...</source>
         <translation>Изпрати Монети</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 PHR.</source>
-        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 PHR.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 NCX.</source>
+        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 NCX.</translation>
     </message>
 </context>
 <context>
@@ -4262,7 +4262,7 @@ Please be patient...</source>
     <name>ZPhrControlDialog</name>
     <message>
         <source>Select zPhr to Spend</source>
-        <translation>Изберете zPHR за Изпращане</translation>
+        <translation>Изберете zNCX за Изпращане</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4274,7 +4274,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPhr</source>
-        <translation>zPHR</translation>
+        <translation>zNCX</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4344,12 +4344,12 @@ Please be patient...</source>
         <translation>Командата влиза в сила, когато най-добрия блок се промени (%s в cmd се замества от хаш на блока)</translation>
     </message>
     <message>
-        <source>Fees (in PHR/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Такси (в PHR/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
+        <source>Fees (in NCX/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Такси (в NCX/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PHR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Такси (в PHR/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
+        <source>Fees (in NCX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Такси (в NCX/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>

@@ -176,16 +176,16 @@
         <translation>지갑 암호화 확인</translation>
     </message>
     <message>
-        <source>NodeCircle will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PHRs from being stolen by malware infecting your computer.</source>
-        <translation>NodeCircle는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 PHRs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
+        <source>NodeCircle will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your NCXs from being stolen by malware infecting your computer.</source>
+        <translation>NodeCircle는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 NCXs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>지갑을 암호화 하시겠습니까?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PHR&lt;/b&gt;!</source>
-        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 PHR를 잃게 됩니다&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NCX&lt;/b&gt;!</source>
+        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 NCX를 잃게 됩니다&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -618,8 +618,8 @@
         <translation>&amp;프라이버시</translation>
     </message>
     <message>
-        <source>Privacy Action for zPHR and Obfuscation</source>
-        <translation>zPHR와 난독화를 위한 프라이버스 작업</translation>
+        <source>Privacy Action for zNCX and Obfuscation</source>
+        <translation>zNCX와 난독화를 위한 프라이버스 작업</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -1548,32 +1548,32 @@ Please check the address and try again.</source>
         <translation>익명화 레벨을 선택해주세요.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 PHR</source>
-        <translation>2개의 개별 마스터노드를 이용하여 최대 10000 PHR 를 섞을 수 있습니다.</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 NCX</source>
+        <translation>2개의 개별 마스터노드를 이용하여 최대 10000 NCX 를 섞을 수 있습니다.</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 PHR</source>
-        <translation>8개의 개별 마스터노드를 이용하여 최대 10000 PHR 를 섞을 수 있습니다.</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 NCX</source>
+        <translation>8개의 개별 마스터노드를 이용하여 최대 10000 NCX 를 섞을 수 있습니다.</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16개의 개별 마스터노드를 사용</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PHR to anonymize 10000 PHR</source>
-        <translation>이 옵션은 가장 빠르게 전송되며 10000 PHR 익명화에 약 ~0.025 PHR의 비용이 들어갑니다.</translation>
+        <source>This option is the quickest and will cost about ~0.025 NCX to anonymize 10000 NCX</source>
+        <translation>이 옵션은 가장 빠르게 전송되며 10000 NCX 익명화에 약 ~0.025 NCX의 비용이 들어갑니다.</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PHR to anonymize 10000 PHR</source>
-        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 PHR 익명화에 약 0.05 PHR의 비용이 들어갑니다.</translation>
+        <source>This option is moderately fast and will cost about 0.05 NCX to anonymize 10000 NCX</source>
+        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 NCX 익명화에 약 0.05 NCX의 비용이 들어갑니다.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>이것은 가장 느리고 안전한 옵션입니다. 최고 익명성을 사용하면 비용이 발생합니다.</translation>
     </message>
     <message>
-        <source>0.1 PHR per 10000 PHR you anonymize.</source>
-        <translation>10000 PHR 익명화에 0.1 PHR 가 듭니다.</translation>
+        <source>0.1 NCX per 10000 NCX you anonymize.</source>
+        <translation>10000 NCX 익명화에 0.1 NCX 가 듭니다.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1716,20 +1716,20 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>&amp;UPnp를 사용하여 포트 매핑</translation>
     </message>
     <message>
-        <source>Percentage of incoming PHR which get automatically converted to zPHR via Zerocoin Protocol (min: 10%)</source>
-        <translation>PHR수신시 자동변환 zPHR 퍼센트 (최소값:10%)</translation>
+        <source>Percentage of incoming NCX which get automatically converted to zNCX via Zerocoin Protocol (min: 10%)</source>
+        <translation>NCX수신시 자동변환 zNCX 퍼센트 (최소값:10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPHR</source>
-        <translation>자동 변환되는 zPHR 퍼센트</translation>
+        <source>Percentage of autominted zNCX</source>
+        <translation>자동 변환되는 zNCX 퍼센트</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PHR for this denomination is available</source>
-        <translation>이 디노미네이션의 PHR가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough NCX for this denomination is available</source>
+        <translation>이 디노미네이션의 NCX가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
     </message>
     <message>
-        <source>Preferred Automint zPHR Denomination</source>
-        <translation>선호하는 자동생성 zPHR 디노미네이션 </translation>
+        <source>Preferred Automint zNCX Denomination</source>
+        <translation>선호하는 자동생성 zNCX 디노미네이션 </translation>
     </message>
     <message>
         <source>Connect to the NodeCircle network through a SOCKS5 proxy.</source>
@@ -1863,8 +1863,8 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>Form</translation>
     </message>
     <message>
-        <source>PHR Balances</source>
-        <translation>PHR 잔액</translation>
+        <source>NCX Balances</source>
+        <translation>NCX 잔액</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1931,12 +1931,12 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>전체 잔액 (대기중 코인 포함)</translation>
     </message>
     <message>
-        <source>PHR:</source>
-        <translation>PHR:</translation>
+        <source>NCX:</source>
+        <translation>NCX:</translation>
     </message>
     <message>
-        <source>zPHR:</source>
-        <translation>zPHR:</translation>
+        <source>zNCX:</source>
+        <translation>zNCX:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -2064,12 +2064,12 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>PHR which were anonymized via Zerocin Protocol</source>
-        <translation>제로코인 프로토콜을 통해 익명화된 PHR</translation>
+        <source>NCX which were anonymized via Zerocin Protocol</source>
+        <translation>제로코인 프로토콜을 통해 익명화된 NCX</translation>
     </message>
     <message>
-        <source>Zerocoin PHR (zPHR)</source>
-        <translation>제로코인 PHR (zPHR)</translation>
+        <source>Zerocoin NCX (zNCX)</source>
+        <translation>제로코인 NCX (zNCX)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -2081,7 +2081,7 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
     </message>
     <message>
         <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>zPHR로 변환할 PHR 수량을 입력하세요.</translation>
+        <translation>zNCX로 변환할 NCX 수량을 입력하세요.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2092,16 +2092,16 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>0</translation>
     </message>
     <message>
-        <source>zPHR</source>
-        <translation>zPHR</translation>
+        <source>zNCX</source>
+        <translation>zNCX</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
         <translation>생성 가능한 수량 :</translation>
     </message>
     <message>
-        <source>0.000 000 00 PHR</source>
-        <translation>0.000 000 00 PHR</translation>
+        <source>0.000 000 00 NCX</source>
+        <translation>0.000 000 00 NCX</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2137,11 +2137,11 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
     </message>
     <message>
         <source>zPhr Control</source>
-        <translation>zPHR 설정</translation>
+        <translation>zNCX 설정</translation>
     </message>
     <message>
         <source>zPhr Selected:</source>
-        <translation>선택한 zPHR : </translation>
+        <translation>선택한 zNCX : </translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2160,8 +2160,8 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>가능한 잔액:</translation>
     </message>
     <message>
-        <source>0 zPHR</source>
-        <translation>0 zPHR</translation>
+        <source>0 zNCX</source>
+        <translation>0 zNCX</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2181,7 +2181,7 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
     </message>
     <message>
         <source>The NodeCircle address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>PHR를 전송할 NodeCircle 주소입니다. 비어있을 때 자신에게 지불할 주소를 생성합니다.</translation>
+        <translation>NCX를 전송할 NodeCircle 주소입니다. 비어있을 때 자신에게 지불할 주소를 생성합니다.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2400,8 +2400,8 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>성공적으로 발행됨</translation>
     </message>
     <message>
-        <source> zPHR in </source>
-        <translation> zPHR in </translation>
+        <source> zNCX in </source>
+        <translation> zNCX in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2503,7 +2503,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPhr Mint</source>
-        <translation>zPHR 생성</translation>
+        <translation>zNCX 생성</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -3132,8 +3132,8 @@ Please be patient...</source>
         <translation>UTXO 크기:</translation>
     </message>
     <message>
-        <source>0 PHR</source>
-        <translation>0 PHR</translation>
+        <source>0 NCX</source>
+        <translation>0 NCX</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3184,12 +3184,12 @@ Please be patient...</source>
         <translation>코인 자동으로 선택됨</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPHRs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPHRs in fee,&lt;br /&gt;while "at least" pays 1000 uPHRs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uPHRs로 설정되고,&lt;br /&gt;1000 uPHRs 안에는 최소 "킬로바이트당" 250 uPHRs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
+        <source>If the custom fee is set to 1000 uNCXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uNCXs in fee,&lt;br /&gt;while "at least" pays 1000 uNCXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uNCXs로 설정되고,&lt;br /&gt;1000 uNCXs 안에는 최소 "킬로바이트당" 250 uNCXs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPHRs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPHRs in fee,&lt;br /&gt;while "total at least" pays 1000 uPHRs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uPHRs로 설정되고,&lt;br /&gt;1000 uPHRs 안에는 전체에서 최소 "킬로바이트당" 250 uPHRs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
+        <source>If the custom fee is set to 1000 uNCXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uNCXs in fee,&lt;br /&gt;while "total at least" pays 1000 uNCXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uNCXs로 설정되고,&lt;br /&gt;1000 uNCXs 안에는 전체에서 최소 "킬로바이트당" 250 uNCXs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for NodeCircle transactions than the network can process.</source>
@@ -3240,8 +3240,8 @@ Please be patient...</source>
         <translation>&amp;받는 사람 추가</translation>
     </message>
     <message>
-        <source>Anonymized PHR</source>
-        <translation>익명화 PHR</translation>
+        <source>Anonymized NCX</source>
+        <translation>익명화 NCX</translation>
     </message>
     <message>
         <source>SwiftTX</source>
@@ -3962,19 +3962,19 @@ Please be patient...</source>
     </message>
     <message>
         <source>Converted Phr to zPhr</source>
-        <translation>zPHR로 변환된 PHR</translation>
+        <translation>zNCX로 변환된 NCX</translation>
     </message>
     <message>
         <source>Spent zPhr</source>
-        <translation>전송된 zPHR</translation>
+        <translation>전송된 zNCX</translation>
     </message>
     <message>
         <source>Received Phr from zPhr</source>
-        <translation>zPHR로 전송받은 PHR</translation>
+        <translation>zNCX로 전송받은 NCX</translation>
     </message>
     <message>
         <source>Minted Change as zPhr from zPhr Spend</source>
-        <translation>zPHR 전송후 남은 잔돈 zPHR 생성됨</translation>
+        <translation>zNCX 전송후 남은 잔돈 zNCX 생성됨</translation>
     </message>
     <message>
         <source>Converted zPhr to Phr</source>
@@ -4097,7 +4097,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Received Phr from zPhr</source>
-        <translation>zPHR로 전송받은 PHR</translation>
+        <translation>zNCX로 전송받은 NCX</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4109,7 +4109,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zPhr</source>
-        <translation>제로코인 전송, 잔돈은 zPHR</translation>
+        <translation>제로코인 전송, 잔돈은 zNCX</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4233,8 +4233,8 @@ Please be patient...</source>
         <translation>코인 전송 </translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 PHR.</source>
-        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 PHR로 제한됩니다.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 NCX.</source>
+        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 NCX로 제한됩니다.</translation>
     </message>
 </context>
 <context>
@@ -4280,7 +4280,7 @@ Please be patient...</source>
     <name>ZPhrControlDialog</name>
     <message>
         <source>Select zPhr to Spend</source>
-        <translation>전송할 zPHR 선택</translation>
+        <translation>전송할 zNCX 선택</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4394,12 +4394,12 @@ Please be patient...</source>
         <translation>최고 블록이 변경될 경우 명령을 실행하십시오 (명령 내 %s 는 블록 해시로 대체 되었습니다)</translation>
     </message>
     <message>
-        <source>Fees (in PHR/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>이것보다 작은 수수료 (PHR/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in NCX/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>이것보다 작은 수수료 (NCX/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PHR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>이것보다 작은 수수료 (PHR/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in NCX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>이것보다 작은 수수료 (NCX/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4526,12 +4526,12 @@ rpcpassword=%s
         <translation>이 트랜잭션를 위해 난독화 표기된 충분한 금액을 찾을 수 없습니다.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PHR.</source>
-        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 PHR과 일치하지 않음.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 NCX.</source>
+        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 NCX과 일치하지 않음.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PHR.</source>
-        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 PHR와 같지 않음</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 NCX.</source>
+        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 NCX와 같지 않음</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4834,8 +4834,8 @@ rpcpassword=%s
         <translation>블록을 받아오는데 실패했습니다.</translation>
     </message>
     <message>
-        <source>Fee (in PHR/kB) to add to transactions you send (default: %s)</source>
-        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (PHR/kB) (기본값: %s)</translation>
+        <source>Fee (in NCX/kB) to add to transactions you send (default: %s)</source>
+        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (NCX/kB) (기본값: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>

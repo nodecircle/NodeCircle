@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>NodeCircle will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PHRs from being stolen by malware infecting your computer.</source>
+        <source>NodeCircle will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your NCXs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -231,7 +231,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PHR&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NCX&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -546,7 +546,7 @@
     </message>
     <message>
         <location line="+11"/>
-        <source>Privacy Actions for zPHR</source>
+        <source>Privacy Actions for zNCX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2078,7 +2078,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Add destinations to send PHR to</source>
+        <source>Add destinations to send NCX to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2210,12 +2210,12 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 10000 PHR</source>
+        <source>Use 2 separate masternodes to mix funds up to 10000 NCX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 10000 PHR</source>
+        <source>Use 8 separate masternodes to mix funds up to 10000 NCX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2225,12 +2225,12 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 PHR to anonymize 10000 PHR</source>
+        <source>This option is the quickest and will cost about ~0.025 NCX to anonymize 10000 NCX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 PHR to anonymize 10000 PHR</source>
+        <source>This option is moderately fast and will cost about 0.05 NCX to anonymize 10000 NCX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2240,7 +2240,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+13"/>
-        <source>0.1 PHR per 10000 PHR you anonymize.</source>
+        <source>0.1 NCX per 10000 NCX you anonymize.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2419,23 +2419,23 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</so
     </message>
     <message>
         <location line="-133"/>
-        <source>Percentage of incoming PHR which get automatically converted to zPHR via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming NCX which get automatically converted to zNCX via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Percentage of autominted zPHR</source>
+        <source>Percentage of autominted zNCX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+30"/>
         <location line="+16"/>
-        <source>Wait with automatic conversion to Zerocoin until enough PHR for this denomination is available</source>
+        <source>Wait with automatic conversion to Zerocoin until enough NCX for this denomination is available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-13"/>
-        <source>Preferred Automint zPHR Denomination</source>
+        <source>Preferred Automint zNCX Denomination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2605,7 +2605,7 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</so
     </message>
     <message>
         <location line="+43"/>
-        <source>PHR Balances</source>
+        <source>NCX Balances</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2706,17 +2706,17 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</so
     </message>
     <message>
         <location line="+36"/>
-        <source>PHR:</source>
+        <source>NCX:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+35"/>
-        <source>zPHR:</source>
+        <source>zNCX:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Current percentage of zPHR.
+        <source>Current percentage of zNCX.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2729,7 +2729,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     <message>
         <location line="-46"/>
         <location line="+13"/>
-        <source>Locked PHR or Masternode collaterals. These are excluded from zPHR minting.</source>
+        <source>Locked NCX or Masternode collaterals. These are excluded from zNCX minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2738,7 +2738,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
         <location line="+189"/>
         <location line="+31"/>
         <location line="+44"/>
-        <source>0.000 000 00 PHR</source>
+        <source>0.000 000 00 NCX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2749,7 +2749,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     <message>
         <location line="+7"/>
         <location line="+10"/>
-        <source>Unlocked PHRs. These can be used for zPHR minting.</source>
+        <source>Unlocked NCXs. These can be used for zNCX minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2766,7 +2766,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
         <location line="+14"/>
         <location line="+104"/>
         <source>Mature: more than 20 confirmation and more than 3 mints of the same denomination after it was minted.
-These zPHR are spendable.</source>
+These zNCX are spendable.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2777,7 +2777,7 @@ These zPHR are spendable.</source>
     <message>
         <location line="+23"/>
         <location line="+35"/>
-        <source>All available zPHR, unconfirmed and immature zPHR included.</source>
+        <source>All available zNCX, unconfirmed and immature zNCX included.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2807,7 +2807,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
     </message>
     <message>
         <location line="+93"/>
-        <source>Current percentage of zPHR.
+        <source>Current percentage of zNCX.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
         <translation type="unfinished"></translation>
@@ -2973,12 +2973,12 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <name>PrivacyDialog</name>
     <message>
         <location filename="../forms/privacydialog.ui" line="+55"/>
-        <source>PHR which were anonymized via Zerocin Protocol</source>
+        <source>NCX which were anonymized via Zerocin Protocol</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Zerocoin PHR (zPHR)</source>
+        <source>Zerocoin NCX (zNCX)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3013,7 +3013,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <message>
         <location line="-349"/>
         <location line="+629"/>
-        <source>zPHR</source>
+        <source>zNCX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3028,7 +3028,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+13"/>
-        <source>0.000 000 00 PHR</source>
+        <source>0.000 000 00 NCX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3106,7 +3106,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+7"/>
-        <source>Available (mature and spendable) zPHR for spending</source>
+        <source>Available (mature and spendable) zNCX for spending</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3116,15 +3116,15 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+16"/>
-        <source>Available (mature and spendable) zPHR for spending
+        <source>Available (mature and spendable) zNCX for spending
 
-zPHR are mature when they have more than 20 confirmations AND more than 3 mints of the same denomination after them were minted</source>
+zNCX are mature when they have more than 20 confirmations AND more than 3 mints of the same denomination after them were minted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+5"/>
         <location line="+417"/>
-        <source>0 zPHR</source>
+        <source>0 zNCX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3215,7 +3215,7 @@ zPHR are mature when they have more than 20 confirmations AND more than 3 mints 
     <message>
         <location line="+62"/>
         <location line="+38"/>
-        <source>Total Balance including unconfirmed and immature zPHR</source>
+        <source>Total Balance including unconfirmed and immature zNCX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3432,7 +3432,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
     <message>
         <location line="+50"/>
         <location line="+113"/>
-        <source>zPHR is currently undergoing maintenance.</source>
+        <source>zNCX is currently undergoing maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3457,7 +3457,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
     </message>
     <message>
         <location line="+0"/>
-        <source> zPHR in </source>
+        <source> zNCX in </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3560,7 +3560,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+15"/>
-        <source>zPHR Spend #: </source>
+        <source>zNCX Spend #: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4464,7 +4464,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+7"/>
-        <source>0 PHR</source>
+        <source>0 NCX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4534,12 +4534,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+772"/>
-        <source>If the custom fee is set to 1000 uPHRs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uPHRs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uPHRs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uNCXs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uNCXs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uNCXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>If the custom fee is set to 1000 uPHRs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uPHRs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uPHRs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uNCXs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uNCXs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uNCXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4605,7 +4605,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+35"/>
-        <source>Anonymized PHR</source>
+        <source>Anonymized NCX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5887,7 +5887,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 PHR.</source>
+        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 NCX.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6082,12 +6082,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in PHR/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in NCX/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in PHR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in NCX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6232,12 +6232,12 @@ for example: alertnotify=echo %%s | mail -s &quot;NodeCircle Alert&quot; admin@f
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PHR.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 NCX.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PHR.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 NCX.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6637,7 +6637,7 @@ for example: alertnotify=echo %%s | mail -s &quot;NodeCircle Alert&quot; admin@f
     </message>
     <message>
         <location line="+2"/>
-        <source>Fee (in PHR/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in NCX/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6839,7 +6839,7 @@ for example: alertnotify=echo %%s | mail -s &quot;NodeCircle Alert&quot; admin@f
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable automatic wallet backups triggered after each zPHR minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each zNCX minting (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

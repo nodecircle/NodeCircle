@@ -176,16 +176,16 @@
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>NodeCircle will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PHRs from being stolen by malware infecting your computer.</source>
-        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer PHRs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+        <source>NodeCircle will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your NCXs from being stolen by malware infecting your computer.</source>
+        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer NCXs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Sind Sie sich sicher, dass Sie ihre Wallet verschlüsseln möchten?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PHR&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre PHRs verlieren&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NCX&lt;/b&gt;!</source>
+        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre NCXs verlieren&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -618,8 +618,8 @@
         <translation>&amp;Privatsphäre</translation>
     </message>
     <message>
-        <source>Privacy Action for zPHR and Obfuscation</source>
-        <translation>Privatsphäre Aktion für zPHR und Verschleierung</translation>
+        <source>Privacy Action for zNCX and Obfuscation</source>
+        <translation>Privatsphäre Aktion für zNCX und Verschleierung</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -1539,32 +1539,32 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Bitte den gewünschten Privatsphäre Level auswählen.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 PHR</source>
-        <translation>2 separate Masternodes verwenden um bis zu 10000 PHR zu mixen</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 NCX</source>
+        <translation>2 separate Masternodes verwenden um bis zu 10000 NCX zu mixen</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 PHR</source>
-        <translation>8 separate Masternodes verwenden um bis zu 10000 PHR zu mixen</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 NCX</source>
+        <translation>8 separate Masternodes verwenden um bis zu 10000 NCX zu mixen</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16 separate Masternodes verwenden</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PHR to anonymize 10000 PHR</source>
-        <translation>Diese Option ist die schnellst und kostet ungefähr ~0.025 PHR um 10000 PHR zu anonymisieren </translation>
+        <source>This option is the quickest and will cost about ~0.025 NCX to anonymize 10000 NCX</source>
+        <translation>Diese Option ist die schnellst und kostet ungefähr ~0.025 NCX um 10000 NCX zu anonymisieren </translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PHR to anonymize 10000 PHR</source>
-        <translation>Diese Option ist angemessen schnell und kostet ungefähr  0.05 PHR um 10000 PHR zu anonymisieren</translation>
+        <source>This option is moderately fast and will cost about 0.05 NCX to anonymize 10000 NCX</source>
+        <translation>Diese Option ist angemessen schnell und kostet ungefähr  0.05 NCX um 10000 NCX zu anonymisieren</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Diese Option ist die langsamste und sicherste Option. Die Verwendung maximaler Anonymisierung kostet</translation>
     </message>
     <message>
-        <source>0.1 PHR per 10000 PHR you anonymize.</source>
-        <translation>0.1 PHR per 10000 PHR die anonymisiert werden.</translation>
+        <source>0.1 NCX per 10000 NCX you anonymize.</source>
+        <translation>0.1 NCX per 10000 NCX die anonymisiert werden.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1707,20 +1707,20 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>Port mit &amp;UPnP mappen</translation>
     </message>
     <message>
-        <source>Percentage of incoming PHR which get automatically converted to zPHR via Zerocoin Protocol (min: 10%)</source>
-        <translation>Anteil des eingehenden PHR, welcher automatisch zu zPHR via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
+        <source>Percentage of incoming NCX which get automatically converted to zNCX via Zerocoin Protocol (min: 10%)</source>
+        <translation>Anteil des eingehenden NCX, welcher automatisch zu zNCX via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPHR</source>
-        <translation>Prozentsatz der automatisierten zPHR</translation>
+        <source>Percentage of autominted zNCX</source>
+        <translation>Prozentsatz der automatisierten zNCX</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PHR for this denomination is available</source>
-        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend PHR für diese Stückelung verfügbar ist</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough NCX for this denomination is available</source>
+        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend NCX für diese Stückelung verfügbar ist</translation>
     </message>
     <message>
-        <source>Preferred Automint zPHR Denomination</source>
-        <translation>Bevorzugte automatisierte zPHR Stückelung </translation>
+        <source>Preferred Automint zNCX Denomination</source>
+        <translation>Bevorzugte automatisierte zNCX Stückelung </translation>
     </message>
     <message>
         <source>Connect to the NodeCircle network through a SOCKS5 proxy.</source>
@@ -1854,8 +1854,8 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>Formular</translation>
     </message>
     <message>
-        <source>PHR Balances</source>
-        <translation>PHR Bilanzen</translation>
+        <source>NCX Balances</source>
+        <translation>NCX Bilanzen</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1922,12 +1922,12 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>Kombinierte Bilanz (einschließlich unreifer Coins)</translation>
     </message>
     <message>
-        <source>PHR:</source>
-        <translation>PHR:</translation>
+        <source>NCX:</source>
+        <translation>NCX:</translation>
     </message>
     <message>
-        <source>zPHR:</source>
-        <translation>zPHR:</translation>
+        <source>zNCX:</source>
+        <translation>zNCX:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -2055,12 +2055,12 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>PHR which were anonymized via Zerocin Protocol</source>
-        <translation>PHR, die über das Zerocoin-Protokoll anonymisiert wurden</translation>
+        <source>NCX which were anonymized via Zerocin Protocol</source>
+        <translation>NCX, die über das Zerocoin-Protokoll anonymisiert wurden</translation>
     </message>
     <message>
-        <source>Zerocoin PHR (zPHR)</source>
-        <translation>Zerocoin PHR (zPHR)</translation>
+        <source>Zerocoin NCX (zNCX)</source>
+        <translation>Zerocoin NCX (zNCX)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -2083,16 +2083,16 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>0</translation>
     </message>
     <message>
-        <source>zPHR</source>
-        <translation>zPHR</translation>
+        <source>zNCX</source>
+        <translation>zNCX</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
         <translation>Verfügbar für Prägung:</translation>
     </message>
     <message>
-        <source>0.000 000 00 PHR</source>
-        <translation>0.000 000 00 PHR</translation>
+        <source>0.000 000 00 NCX</source>
+        <translation>0.000 000 00 NCX</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2151,8 +2151,8 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>Verfügbare Bilanz:</translation>
     </message>
     <message>
-        <source>0 zPHR</source>
-        <translation>0 zPHR</translation>
+        <source>0 zNCX</source>
+        <translation>0 zNCX</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2391,8 +2391,8 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>Erfolgreich geprägt</translation>
     </message>
     <message>
-        <source> zPHR in </source>
-        <translation> zPHR in </translation>
+        <source> zNCX in </source>
+        <translation> zNCX in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2470,7 +2470,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>zPhr Spend #: </source>
-        <translation>zPHR Ausgeben #:</translation>
+        <translation>zNCX Ausgeben #:</translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -3051,7 +3051,7 @@ Bitte haben Sie Geduld...</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>PHRs überweisen</translation>
+        <translation>NCXs überweisen</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -3122,8 +3122,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>UTXO Größe:</translation>
     </message>
     <message>
-        <source>0 PHR</source>
-        <translation>0 PHR</translation>
+        <source>0 NCX</source>
+        <translation>0 NCX</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3174,12 +3174,12 @@ Bitte haben Sie Geduld...</translation>
         <translation>Coins automatisch ausgewählt</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPHRs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPHRs in fee,&lt;br /&gt;while "at least" pays 1000 uPHRs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uPHRs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uPHRs an Gebühren,&lt;br /&gt;während man "mindestens" 1000 uPHRs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uNCXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uNCXs in fee,&lt;br /&gt;while "at least" pays 1000 uNCXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uNCXs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uNCXs an Gebühren,&lt;br /&gt;während man "mindestens" 1000 uNCXs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPHRs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPHRs in fee,&lt;br /&gt;while "total at least" pays 1000 uPHRs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uPHRs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uPHRs an Gebühren,&lt;br /&gt;während man "insgesamt mindestens" 1000 uPHRs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uNCXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uNCXs in fee,&lt;br /&gt;while "total at least" pays 1000 uNCXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uNCXs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uNCXs an Gebühren,&lt;br /&gt;während man "insgesamt mindestens" 1000 uNCXs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for NodeCircle transactions than the network can process.</source>
@@ -3230,8 +3230,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Empfänge&amp;r hinzufügen</translation>
     </message>
     <message>
-        <source>Anonymized PHR</source>
-        <translation>Anonymisierte PHR</translation>
+        <source>Anonymized NCX</source>
+        <translation>Anonymisierte NCX</translation>
     </message>
     <message>
         <source>SwiftTX</source>
@@ -3805,7 +3805,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Erzeugte PHRs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine PHRs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
+        <translation>Erzeugte NCXs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine NCXs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -3951,23 +3951,23 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Converted Phr to zPhr</source>
-        <translation>Umgewandeltes PHR zu zPHR</translation>
+        <translation>Umgewandeltes NCX zu zNCX</translation>
     </message>
     <message>
         <source>Spent zPhr</source>
-        <translation>Ausgeben zPHR</translation>
+        <translation>Ausgeben zNCX</translation>
     </message>
     <message>
         <source>Received Phr from zPhr</source>
-        <translation>Empfangene PHR von zPHR</translation>
+        <translation>Empfangene NCX von zNCX</translation>
     </message>
     <message>
         <source>Minted Change as zPhr from zPhr Spend</source>
-        <translation>Geprägtes Wechselgeld als zPHR von zPHR Ausgabe</translation>
+        <translation>Geprägtes Wechselgeld als zNCX von zNCX Ausgabe</translation>
     </message>
     <message>
         <source>Converted zPhr to Phr</source>
-        <translation>Umgewandeltes zPHR zu PHR</translation>
+        <translation>Umgewandeltes zNCX zu NCX</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -3975,7 +3975,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>zPhr Accumulator</source>
-        <translation>zPHR Speicher</translation>
+        <translation>zNCX Speicher</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4086,7 +4086,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Received Phr from zPhr</source>
-        <translation>Empfangene PHR von zPHR</translation>
+        <translation>Empfangene NCX von zNCX</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4098,7 +4098,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zPhr</source>
-        <translation>Zerocoin Ausgabe, Wechselgeld in zPHR</translation>
+        <translation>Zerocoin Ausgabe, Wechselgeld in zNCX</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4219,11 +4219,11 @@ Bitte haben Sie Geduld...</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>PHRs überweisen</translation>
+        <translation>NCXs überweisen</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 PHR.</source>
-        <translation>SwiftTX unterstützt das Versenden von Beträgen dieser Höhe noch nicht. Transaktionen sind zur Zeit auf maximal %1 PHR begrenzt.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 NCX.</source>
+        <translation>SwiftTX unterstützt das Versenden von Beträgen dieser Höhe noch nicht. Transaktionen sind zur Zeit auf maximal %1 NCX begrenzt.</translation>
     </message>
 </context>
 <context>
@@ -4269,7 +4269,7 @@ Bitte haben Sie Geduld...</translation>
     <name>ZPhrControlDialog</name>
     <message>
         <source>Select zPhr to Spend</source>
-        <translation>Auswahl zPHR als Ausgabe</translation>
+        <translation>Auswahl zNCX als Ausgabe</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4281,7 +4281,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>zPhr</source>
-        <translation>zPHR</translation>
+        <translation>zNCX</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4363,12 +4363,12 @@ Bitte haben Sie Geduld...</translation>
         <translation>Befehl ausführen, wenn sich der beste Block ändert (%s in cmd wird durch Blockhash ersetzt)</translation>
     </message>
     <message>
-        <source>Fees (in PHR/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebühren (in PHR/kB) kleiner als diese gelten für die Weiterleitung als Null-Gebühr  (default: %s)</translation>
+        <source>Fees (in NCX/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebühren (in NCX/kB) kleiner als diese gelten für die Weiterleitung als Null-Gebühr  (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PHR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebühren (in PHR/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
+        <source>Fees (in NCX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebühren (in NCX/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4755,8 +4755,8 @@ Beispiel: alertnotify=echo %%s | mail -s "NodeCircle Alert" admin@foo.com
         <translation>Block konnte nicht gelesen werden</translation>
     </message>
     <message>
-        <source>Fee (in PHR/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebühr (in PHR/kB) die den Transaktionen, die Sie überweisen, hinzugefügt wird (Standard: %s)</translation>
+        <source>Fee (in NCX/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebühr (in NCX/kB) die den Transaktionen, die Sie überweisen, hinzugefügt wird (Standard: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>

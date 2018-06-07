@@ -38,7 +38,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::PHR)
+    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::NCX)
     {
     }
 
@@ -167,7 +167,7 @@ OverviewPage::~OverviewPage()
     delete ui;
 }
 
-void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sPHRPercentage, QString& szPHRPercentage)
+void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sNCXPercentage, QString& szNCXPercentage)
 {
     int nPrecision = 2;
     double dzPercentage = 0.0;
@@ -186,8 +186,8 @@ void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBala
 
     double dPercentage = 100.0 - dzPercentage;
     
-    szPHRPercentage = "(" + QLocale(QLocale::system()).toString(dzPercentage, 'f', nPrecision) + " %)";
-    sPHRPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
+    szNCXPercentage = "(" + QLocale(QLocale::system()).toString(dzPercentage, 'f', nPrecision) + " %)";
+    sNCXPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
     
 }
 
@@ -211,12 +211,12 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
         nLockedBalance = pwalletMain->GetLockedCoins();
         nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
     }
-    // PHR Balance
+    // NCX Balance
     CAmount nTotalBalance = balance + unconfirmedBalance;
     CAmount phrAvailableBalance = balance - immatureBalance - nLockedBalance;
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance + watchImmatureBalance;    
     CAmount nUnlockedBalance = nTotalBalance - nLockedBalance;
-    // zPHR Balance
+    // zNCX Balance
     CAmount matureZerocoinBalance = zerocoinBalance - immatureZerocoinBalance;
     // Percentages
     QString szPercentage = "";
@@ -226,7 +226,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     CAmount availableTotalBalance = phrAvailableBalance + matureZerocoinBalance;
     CAmount sumTotalBalance = nTotalBalance + zerocoinBalance;
 
-    // PHR labels
+    // NCX labels
     ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, phrAvailableBalance, false, BitcoinUnits::separatorAlways));
     ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
@@ -240,7 +240,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelWatchLocked->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nWatchOnlyLockedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelWatchTotal->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nTotalWatchBalance, false, BitcoinUnits::separatorAlways));
 
-    // zPHR labels
+    // zNCX labels
     ui->labelzBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, zerocoinBalance, false, BitcoinUnits::separatorAlways));
     ui->labelzBalanceUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedZerocoinBalance, false, BitcoinUnits::separatorAlways));
     ui->labelzBalanceMature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, matureZerocoinBalance, false, BitcoinUnits::separatorAlways));
@@ -251,11 +251,11 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelTotalz->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, sumTotalBalance, false, BitcoinUnits::separatorAlways));
 
     // Percentage labels
-    ui->labelPHRPercent->setText(sPercentage);
-    ui->labelzPHRPercent->setText(szPercentage);
+    ui->labelNCXPercent->setText(sPercentage);
+    ui->labelzNCXPercent->setText(szPercentage);
 
     // Adjust bubble-help according to AutoMint settings
-    QString automintHelp = tr("Current percentage of zPHR.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
+    QString automintHelp = tr("Current percentage of zNCX.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
     bool fEnableZeromint = GetBoolArg("-enablezeromint", false);
     int nZeromintPercentage = GetArg("-zeromintpercentage", 10);
     if (fEnableZeromint) {
@@ -272,39 +272,39 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     bool showSumAvailable = settingShowAllBalances || sumTotalBalance != availableTotalBalance;
     ui->labelBalanceTextz->setVisible(showSumAvailable);
     ui->labelBalancez->setVisible(showSumAvailable);
-    bool showPHRAvailable = settingShowAllBalances || phrAvailableBalance != nTotalBalance;
-    bool showWatchOnlyPHRAvailable = watchOnlyBalance != nTotalWatchBalance;
-    bool showPHRPending = settingShowAllBalances || unconfirmedBalance != 0;
-    bool showWatchOnlyPHRPending = watchUnconfBalance != 0;
-    bool showPHRLocked = settingShowAllBalances || nLockedBalance != 0;
-    bool showWatchOnlyPHRLocked = nWatchOnlyLockedBalance != 0;
+    bool showNCXAvailable = settingShowAllBalances || phrAvailableBalance != nTotalBalance;
+    bool showWatchOnlyNCXAvailable = watchOnlyBalance != nTotalWatchBalance;
+    bool showNCXPending = settingShowAllBalances || unconfirmedBalance != 0;
+    bool showWatchOnlyNCXPending = watchUnconfBalance != 0;
+    bool showNCXLocked = settingShowAllBalances || nLockedBalance != 0;
+    bool showWatchOnlyNCXLocked = nWatchOnlyLockedBalance != 0;
     bool showImmature = settingShowAllBalances || immatureBalance != 0;
     bool showWatchOnlyImmature = watchImmatureBalance != 0;
     bool showWatchOnly = nTotalWatchBalance != 0;
-    ui->labelBalance->setVisible(showPHRAvailable || showWatchOnlyPHRAvailable);
-    ui->labelBalanceText->setVisible(showPHRAvailable || showWatchOnlyPHRAvailable);
-    ui->labelWatchAvailable->setVisible(showPHRAvailable && showWatchOnly);
-    ui->labelUnconfirmed->setVisible(showPHRPending || showWatchOnlyPHRPending);
-    ui->labelPendingText->setVisible(showPHRPending || showWatchOnlyPHRPending);
-    ui->labelWatchPending->setVisible(showPHRPending && showWatchOnly);
-    ui->labelLockedBalance->setVisible(showPHRLocked || showWatchOnlyPHRLocked);
-    ui->labelLockedBalanceText->setVisible(showPHRLocked || showWatchOnlyPHRLocked);
-    ui->labelWatchLocked->setVisible(showPHRLocked && showWatchOnly);
+    ui->labelBalance->setVisible(showNCXAvailable || showWatchOnlyNCXAvailable);
+    ui->labelBalanceText->setVisible(showNCXAvailable || showWatchOnlyNCXAvailable);
+    ui->labelWatchAvailable->setVisible(showNCXAvailable && showWatchOnly);
+    ui->labelUnconfirmed->setVisible(showNCXPending || showWatchOnlyNCXPending);
+    ui->labelPendingText->setVisible(showNCXPending || showWatchOnlyNCXPending);
+    ui->labelWatchPending->setVisible(showNCXPending && showWatchOnly);
+    ui->labelLockedBalance->setVisible(showNCXLocked || showWatchOnlyNCXLocked);
+    ui->labelLockedBalanceText->setVisible(showNCXLocked || showWatchOnlyNCXLocked);
+    ui->labelWatchLocked->setVisible(showNCXLocked && showWatchOnly);
     ui->labelImmature->setVisible(showImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelImmatureText->setVisible(showImmature || showWatchOnlyImmature);
     ui->labelWatchImmature->setVisible(showImmature && showWatchOnly); // show watch-only immature balance
-    bool showzPHRAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
-    bool showzPHRUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
-    bool showzPHRImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
-    ui->labelzBalanceMature->setVisible(showzPHRAvailable);
-    ui->labelzBalanceMatureText->setVisible(showzPHRAvailable);
-    ui->labelzBalanceUnconfirmed->setVisible(showzPHRUnconfirmed);
-    ui->labelzBalanceUnconfirmedText->setVisible(showzPHRUnconfirmed);
-    ui->labelzBalanceImmature->setVisible(showzPHRImmature);
-    ui->labelzBalanceImmatureText->setVisible(showzPHRImmature);
+    bool showzNCXAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
+    bool showzNCXUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
+    bool showzNCXImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
+    ui->labelzBalanceMature->setVisible(showzNCXAvailable);
+    ui->labelzBalanceMatureText->setVisible(showzNCXAvailable);
+    ui->labelzBalanceUnconfirmed->setVisible(showzNCXUnconfirmed);
+    ui->labelzBalanceUnconfirmedText->setVisible(showzNCXUnconfirmed);
+    ui->labelzBalanceImmature->setVisible(showzNCXImmature);
+    ui->labelzBalanceImmatureText->setVisible(showzNCXImmature);
     bool showPercentages = ! (zerocoinBalance == 0 && nTotalBalance == 0);
-    ui->labelPHRPercent->setVisible(showPercentages);
-    ui->labelzPHRPercent->setVisible(showPercentages);
+    ui->labelNCXPercent->setVisible(showPercentages);
+    ui->labelzNCXPercent->setVisible(showPercentages);
 
     static int cachedTxLocks = 0;
 
@@ -375,7 +375,7 @@ void OverviewPage::setWalletModel(WalletModel* model)
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("PHR")
+    // update the display unit, to not use the default ("NCX")
     updateDisplayUnit();
 }
 

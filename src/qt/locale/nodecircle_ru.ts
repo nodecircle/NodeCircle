@@ -172,7 +172,7 @@
         <translation>Подтверждение шифрования кошелька</translation>
     </message>
     <message>
-        <source>NodeCircle will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PHRs from being stolen by malware infecting your computer.</source>
+        <source>NodeCircle will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your NCXs from being stolen by malware infecting your computer.</source>
         <translation>NodeCircle сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши NodeCircle от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
@@ -180,8 +180,8 @@
         <translation>Вы действительно хотите зашифровать свой кошелек?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PHR&lt;/b&gt;!</source>
-        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ PHR&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NCX&lt;/b&gt;!</source>
+        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ NCX&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -610,7 +610,7 @@
         <translation>&amp;Конфиденциальность</translation>
     </message>
     <message>
-        <source>Privacy Action for zPHR and Obfuscation</source>
+        <source>Privacy Action for zNCX and Obfuscation</source>
         <translation>Конфиденциальное действие и обфускация</translation>
     </message>
     <message>
@@ -1516,32 +1516,32 @@ Please check the address and try again.</source>
         <translation>Выберите уровень конфиденциальности.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 PHR</source>
-        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 PHR</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 NCX</source>
+        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 NCX</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 PHR</source>
-        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 PHR</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 NCX</source>
+        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 NCX</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Используйте 16 разных мастернод</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PHR to anonymize 10000 PHR</source>
-        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 PHR для анонимизации 10000 PHR</translation>
+        <source>This option is the quickest and will cost about ~0.025 NCX to anonymize 10000 NCX</source>
+        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 NCX для анонимизации 10000 NCX</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PHR to anonymize 10000 PHR</source>
-        <translation>Это средний по скорости вариант и он будет стоить около 0.05 PHR для анонимизации 10000 PHR</translation>
+        <source>This option is moderately fast and will cost about 0.05 NCX to anonymize 10000 NCX</source>
+        <translation>Это средний по скорости вариант и он будет стоить около 0.05 NCX для анонимизации 10000 NCX</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Это самый медленный и безопасный вариант. Максимальная анонимность стоит</translation>
     </message>
     <message>
-        <source>0.1 PHR per 10000 PHR you anonymize.</source>
-        <translation>0.1 PHR за 10000 PHR которые вы собираетесь анонимизировать.</translation>
+        <source>0.1 NCX per 10000 NCX you anonymize.</source>
+        <translation>0.1 NCX за 10000 NCX которые вы собираетесь анонимизировать.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1684,16 +1684,16 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>Карта порта, использующего &amp;UPnP</translation>
     </message>
     <message>
-        <source>Percentage of incoming PHR which get automatically converted to zPHR via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент приходящих PHR, которые автоматически конвертируются в zPHR благодаря Zerocoin протоколу (min: 10%)</translation>
+        <source>Percentage of incoming NCX which get automatically converted to zNCX via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент приходящих NCX, которые автоматически конвертируются в zNCX благодаря Zerocoin протоколу (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPHR</source>
-        <translation>Процент  авточеканненых zPHR</translation>
+        <source>Percentage of autominted zNCX</source>
+        <translation>Процент  авточеканненых zNCX</translation>
     </message>
     <message>
-        <source>Preferred Automint zPHR Denomination</source>
-        <translation>Предпочитаемый номинал авточеканной  монеты  zPHR</translation>
+        <source>Preferred Automint zNCX Denomination</source>
+        <translation>Предпочитаемый номинал авточеканной  монеты  zNCX</translation>
     </message>
     <message>
         <source>Connect to the NodeCircle network through a SOCKS5 proxy.</source>
@@ -1827,8 +1827,8 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>Вид</translation>
     </message>
     <message>
-        <source>PHR Balances</source>
-        <translation>Баланс PHR</translation>
+        <source>NCX Balances</source>
+        <translation>Баланс NCX</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1891,12 +1891,12 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>Расходуемый:</translation>
     </message>
     <message>
-        <source>PHR:</source>
-        <translation>PHR:</translation>
+        <source>NCX:</source>
+        <translation>NCX:</translation>
     </message>
     <message>
-        <source>zPHR:</source>
-        <translation>zPHR:</translation>
+        <source>zNCX:</source>
+        <translation>zNCX:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -2020,8 +2020,8 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>PHR which were anonymized via Zerocin Protocol</source>
-        <translation>PHR, который был анонимно использован через Zerocoin протокол</translation>
+        <source>NCX which were anonymized via Zerocin Protocol</source>
+        <translation>NCX, который был анонимно использован через Zerocoin протокол</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -2706,8 +2706,8 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>Изменить:</translation>
     </message>
     <message>
-        <source>0 PHR</source>
-        <translation>0 PHR</translation>
+        <source>0 NCX</source>
+        <translation>0 NCX</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>

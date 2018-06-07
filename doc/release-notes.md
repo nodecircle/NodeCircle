@@ -13,7 +13,7 @@ Please report bugs using the issue tracker at github:
 Mandatory Update
 ==============
 
-NodeCircle Core v3.0.4 is a mandatory update for all users. This release contains various updates/fixes pertaining to the zPHR protocol, supply tracking, block transmission and relaying, as well as usability and quality-of-life updates to the GUI.
+NodeCircle Core v3.0.4 is a mandatory update for all users. This release contains various updates/fixes pertaining to the zNCX protocol, supply tracking, block transmission and relaying, as well as usability and quality-of-life updates to the GUI.
 
 Users will have a grace period to update their clients before versions prior to this release are no longer allowed to connect to this (and future) version(s).
 
@@ -79,7 +79,7 @@ git merge commit are mentioned.
 - #306 `77dd55c` [Core] Don't send not-validated blocks (Mrs-X)
 - #312 `5d79bea` [Main] Update last checkpoint data (Fuzzbawls)
 - #325 `7d98ebe` Reindex zPhr blocks and correct stats. (presstab)
-- #327 `aa1235a` [Main] Don't limit zPHR spends from getting into the mempool (Fuzzbawls)
+- #327 `aa1235a` [Main] Don't limit zNCX spends from getting into the mempool (Fuzzbawls)
 - #329 `19b38b2` Update checkpoints. (presstab)
 - #331 `b1fb710` [Consensus] Bump protocol. Activate via Spork 15. (rejectedpromise)
 
@@ -88,7 +88,7 @@ git merge commit are mentioned.
 - #316 `ed192cf` [Minting] Better filtering of zPhr serials in miner. (presstab)
 
 ### GUI
-- #309 `f560ffc` [UI] Better error message when too much inputs are used for spending zPHR (Mrs-X)
+- #309 `f560ffc` [UI] Better error message when too much inputs are used for spending zNCX (Mrs-X)
 - #317 `b27cb72` [UI] Wallet repair option to resync from scratch (Mrs-X)
 - #323 `2b648be` [UI] Balance fix + bubble-help + usability improvements (Mrs-X)
 - #324 `8cdbb5d` disable negative confirmation numbers. (Mrs-X)

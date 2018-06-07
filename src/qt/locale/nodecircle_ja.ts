@@ -178,16 +178,16 @@
         <translation>ウォレットの再暗号化を行いました</translation>
     </message>
     <message>
-        <source>NodeCircle will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PHRs from being stolen by malware infecting your computer.</source>
-        <translation>暗号化を完了するためウォレットを閉じます。暗号化されたため、パスワードがなければ攻撃者はPHRを送金できません。</translation>
+        <source>NodeCircle will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your NCXs from being stolen by malware infecting your computer.</source>
+        <translation>暗号化を完了するためウォレットを閉じます。暗号化されたため、パスワードがなければ攻撃者はNCXを送金できません。</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>ウォレットを暗号化しますか？</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PHR&lt;/b&gt;!</source>
-        <translation>注意 : もし暗号化した後パスワードを忘れた場合 &lt;b&gt;すべてのPHRを失います&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NCX&lt;/b&gt;!</source>
+        <translation>注意 : もし暗号化した後パスワードを忘れた場合 &lt;b&gt;すべてのNCXを失います&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -836,8 +836,8 @@ Address: %4
         <translation>&amp;匿名化</translation>
     </message>
     <message>
-        <source>Privacy Actions for zPHR</source>
-        <translation>zPHRによる匿名化</translation>
+        <source>Privacy Actions for zNCX</source>
+        <translation>zNCXによる匿名化</translation>
     </message>
     <message>
         <source>&amp;Multisignature creation...</source>
@@ -1611,32 +1611,32 @@ Please check the address and try again.</source>
         <translation>Please select a privacy level.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 PHR</source>
-        <translation>Use 2 separate masternodes to mix funds up to 10000 PHR</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 NCX</source>
+        <translation>Use 2 separate masternodes to mix funds up to 10000 NCX</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 PHR</source>
-        <translation>Use 8 separate masternodes to mix funds up to 10000 PHR</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 NCX</source>
+        <translation>Use 8 separate masternodes to mix funds up to 10000 NCX</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 separate masternodes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PHR to anonymize 10000 PHR</source>
-        <translation>This option is the quickest and will cost about ~0.025 PHR to anonymize 10000 PHR</translation>
+        <source>This option is the quickest and will cost about ~0.025 NCX to anonymize 10000 NCX</source>
+        <translation>This option is the quickest and will cost about ~0.025 NCX to anonymize 10000 NCX</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PHR to anonymize 10000 PHR</source>
-        <translation>This option is moderately fast and will cost about 0.05 PHR to anonymize 10000 PHR</translation>
+        <source>This option is moderately fast and will cost about 0.05 NCX to anonymize 10000 NCX</source>
+        <translation>This option is moderately fast and will cost about 0.05 NCX to anonymize 10000 NCX</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>This is the slowest and most secure option. Using maximum anonymity will cost</translation>
     </message>
     <message>
-        <source>0.1 PHR per 10000 PHR you anonymize.</source>
-        <translation>0.1 PHR per 10000 PHR you anonymize.</translation>
+        <source>0.1 NCX per 10000 NCX you anonymize.</source>
+        <translation>0.1 NCX per 10000 NCX you anonymize.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1915,20 +1915,20 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>入力されたプロキシアドレスは正しくありません。</translation>
     </message>
     <message>
-        <source>Percentage of incoming PHR which get automatically converted to zPHR via Zerocoin Protocol (min: 10%)</source>
-        <translation>受け取られるPHRをzPHR(ゼロコインプロトコル)へ変換する比率(最小: 10%)</translation>
+        <source>Percentage of incoming NCX which get automatically converted to zNCX via Zerocoin Protocol (min: 10%)</source>
+        <translation>受け取られるNCXをzNCX(ゼロコインプロトコル)へ変換する比率(最小: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPHR</source>
-        <translation>zPHRの自動変換の比率</translation>
+        <source>Percentage of autominted zNCX</source>
+        <translation>zNCXの自動変換の比率</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PHR for this denomination is available</source>
-        <translation>選択したdenominationへ変換できるまでPHRの自動変換を中断する</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough NCX for this denomination is available</source>
+        <translation>選択したdenominationへ変換できるまでNCXの自動変換を中断する</translation>
     </message>
     <message>
-        <source>Preferred Automint zPHR Denomination</source>
-        <translation>自動変換するzPHRのdenomination</translation>
+        <source>Preferred Automint zNCX Denomination</source>
+        <translation>自動変換するzNCXのdenomination</translation>
     </message>
     <message>
         <source>I don&apos;t care</source>
@@ -2014,8 +2014,8 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>Obfuscation Balance:</translation>
     </message>
     <message>
-        <source>0 PHR / 0 Rounds</source>
-        <translation>0 PHR / 0 Rounds</translation>
+        <source>0 NCX / 0 Rounds</source>
+        <translation>0 NCX / 0 Rounds</translation>
     </message>
     <message>
         <source>Enabled/Disabled</source>
@@ -2160,8 +2160,8 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>N/A</translation>
     </message>
     <message>
-        <source>PHR Balances</source>
-        <translation>PHRの残高</translation>
+        <source>NCX Balances</source>
+        <translation>NCXの残高</translation>
     </message>
     <message>
         <source>Combined Balances (including unconfirmed and immature coins)</source>
@@ -2176,37 +2176,37 @@ https://www.transifex.com/nodecircle-project/nodecircle-project-translations</tr
         <translation>未確認・未成熟を含んだ全残高。</translation>
     </message>
     <message>
-        <source>PHR:</source>
-        <translation>PHR:</translation>
+        <source>NCX:</source>
+        <translation>NCX:</translation>
     </message>
     <message>
-        <source>zPHR:</source>
-        <translation>zPHR:</translation>
+        <source>zNCX:</source>
+        <translation>zNCX:</translation>
     </message>
     <message>
-        <source>Current percentage of zPHR.
+        <source>Current percentage of zNCX.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%)</source>
-        <translation>現在のzPHRの総所持数への比率。自動変換を有効にしている場合、その比率前後になっています。(デフォルト=10%)</translation>
+        <translation>現在のzNCXの総所持数への比率。自動変換を有効にしている場合、その比率前後になっています。(デフォルト=10%)</translation>
     </message>
     <message>
         <source>0 %</source>
         <translation>0 %</translation>
     </message>
     <message>
-        <source>Locked PHR or Masternode collaterals. These are excluded from zPHR minting.</source>
-        <translation>ロックされたPHR・マスターノードの担保。zPHRの変換対象から除外されます。</translation>
+        <source>Locked NCX or Masternode collaterals. These are excluded from zNCX minting.</source>
+        <translation>ロックされたNCX・マスターノードの担保。zNCXの変換対象から除外されます。</translation>
     </message>
     <message>
-        <source>0.000 000 00 PHR</source>
-        <translation>0 PHR {0.000 000 00 ?}</translation>
+        <source>0.000 000 00 NCX</source>
+        <translation>0 NCX {0.000 000 00 ?}</translation>
     </message>
     <message>
         <source>Locked:</source>
         <translation>ロック済:</translation>
     </message>
     <message>
-        <source>Unlocked PHRs. These can be used for zPHR minting.</source>
-        <translation>未ロックのPHR。zPHRへの変換に利用可能です。</translation>
+        <source>Unlocked NCXs. These can be used for zNCX minting.</source>
+        <translation>未ロックのNCX。zNCXへの変換に利用可能です。</translation>
     </message>
     <message>
         <source>Unlocked:</source>
@@ -2218,17 +2218,17 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 3 mints of the same denomination after it was minted.
-These zPHR are spendable.</source>
+These zNCX are spendable.</source>
         <translation>成熟: 20確認と同じdenominationでの3変換が必要です。
-その後zPHRは使用可能になります。</translation>
+その後zNCXは使用可能になります。</translation>
     </message>
     <message>
         <source>Mature:</source>
         <translation>成熟:</translation>
     </message>
     <message>
-        <source>All available zPHR, unconfirmed and immature zPHR included.</source>
-        <translation>全zPHRの合計。未確認・未成熟のzPHRを含みます。</translation>
+        <source>All available zNCX, unconfirmed and immature zNCX included.</source>
+        <translation>全zNCXの合計。未確認・未成熟のzNCXを含みます。</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2241,10 +2241,10 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
         <translation>未確認:</translation>
     </message>
     <message>
-        <source>Current percentage of zPHR.
+        <source>Current percentage of zNCX.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>現在の所持数とzPHRの比率です。
+        <translation>現在の所持数とzNCXの比率です。
 自動変換が有効であれば指定された比率程度になります (デフォルト = 10%)。
 </translation>
     </message>
@@ -3046,8 +3046,8 @@ To enable AutoMint add &apos;enablezeromint=1&apos; in nodecircle.conf</source>
         <translation>分割ごと枚数:</translation>
     </message>
     <message>
-        <source>0 PHR</source>
-        <translation>0 PHR</translation>
+        <source>0 NCX</source>
+        <translation>0 NCX</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3094,12 +3094,12 @@ To enable AutoMint add &apos;enablezeromint=1&apos; in nodecircle.conf</source>
         <translation>確認時間:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPHRs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uPHRs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uPHRs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uPHRs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uPHRs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uPHRs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uNCXs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uNCXs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uNCXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uNCXs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uNCXs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uNCXs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPHRs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uPHRs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uPHRs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uPHRs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uPHRs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uPHRs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uNCXs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uNCXs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uNCXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uNCXs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uNCXs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uNCXs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for NodeCircle transactions than the network can process.</source>
@@ -3312,8 +3312,8 @@ To enable AutoMint add &apos;enablezeromint=1&apos; in nodecircle.conf</source>
         <translation>コインは自動で選択されます</translation>
     </message>
     <message>
-        <source>Anonymized PHR</source>
-        <translation>匿名化されたPHR</translation>
+        <source>Anonymized NCX</source>
+        <translation>匿名化されたNCX</translation>
     </message>
     <message>
         <source>SwiftX</source>
@@ -3975,27 +3975,27 @@ To enable AutoMint add &apos;enablezeromint=1&apos; in nodecircle.conf</source>
     </message>
     <message>
         <source>Converted Phr to zPhr</source>
-        <translation>PHRをzPHRへ変換</translation>
+        <translation>NCXをzNCXへ変換</translation>
     </message>
     <message>
         <source>Spent zPhr</source>
-        <translation>zPHRを送金</translation>
+        <translation>zNCXを送金</translation>
     </message>
     <message>
         <source>Received Phr from zPhr</source>
-        <translation>zPHRによる受け取り</translation>
+        <translation>zNCXによる受け取り</translation>
     </message>
     <message>
         <source>Minted Change as zPhr from zPhr Spend</source>
-        <translation>zPHRの送金のお釣りをzPHRに変換</translation>
+        <translation>zNCXの送金のお釣りをzNCXに変換</translation>
     </message>
     <message>
         <source>Converted zPhr to Phr</source>
-        <translation>zPHRからPHRへ変換</translation>
+        <translation>zNCXからNCXへ変換</translation>
     </message>
     <message>
         <source>zPhr Accumulator</source>
-        <translation>zPHRアキュムレータ</translation>
+        <translation>zNCXアキュムレータ</translation>
     </message>
 </context>
 <context>
@@ -4174,7 +4174,7 @@ To enable AutoMint add &apos;enablezeromint=1&apos; in nodecircle.conf</source>
     </message>
     <message>
         <source>Received Phr from zPhr</source>
-        <translation>zPHRからPHRへの受け取り</translation>
+        <translation>zNCXからNCXへの受け取り</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4186,7 +4186,7 @@ To enable AutoMint add &apos;enablezeromint=1&apos; in nodecircle.conf</source>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zPhr</source>
-        <translation>ゼロコインの送金,お釣りをzPHRで受け取り</translation>
+        <translation>ゼロコインの送金,お釣りをzNCXで受け取り</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4214,12 +4214,12 @@ To enable AutoMint add &apos;enablezeromint=1&apos; in nodecircle.conf</source>
         <translation>コインの送金</translation>
     </message>
     <message>
-        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 PHR.</source>
-        <translation>SwiftTXはあまり高額の送金は対応してません。%1 PHRが上限です。</translation>
+        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 NCX.</source>
+        <translation>SwiftTXはあまり高額の送金は対応してません。%1 NCXが上限です。</translation>
     </message>
     <message>
-        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 PHR.</source>
-        <translation>SwiftTXはあまり高額の送金は対応してません。%1 PHRが上限です。</translation>
+        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 NCX.</source>
+        <translation>SwiftTXはあまり高額の送金は対応してません。%1 NCXが上限です。</translation>
     </message>
 </context>
 <context>
@@ -4352,12 +4352,12 @@ To enable AutoMint add &apos;enablezeromint=1&apos; in nodecircle.conf</source>
         <translation>Execute command when the best block changes (%s in cmd is replaced by block hash)</translation>
     </message>
     <message>
-        <source>Fees (in PHR/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Fees (in PHR/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
+        <source>Fees (in NCX/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Fees (in NCX/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PHR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Fees (in PHR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
+        <source>Fees (in NCX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Fees (in NCX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4494,12 +4494,12 @@ for example: alertnotify=echo %%s | mail -s &quot;NodeCircle Alert&quot; admin@f
         <translation>Unable to locate enough Obfuscation denominated funds for this transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PHR.</source>
-        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PHR.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 NCX.</source>
+        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 NCX.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PHR.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 10000 PHR.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 NCX.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 10000 NCX.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4786,8 +4786,8 @@ for example: alertnotify=echo %%s | mail -s &quot;NodeCircle Alert&quot; admin@f
         <translation>ブロックの読み込みに失敗</translation>
     </message>
     <message>
-        <source>Fee (in PHR/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in PHR/kB) to add to transactions you send (default: %s)</translation>
+        <source>Fee (in NCX/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in NCX/kB) to add to transactions you send (default: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4958,8 +4958,8 @@ for example: alertnotify=echo %%s | mail -s &quot;NodeCircle Alert&quot; admin@f
         <translation>Enable staking functionality (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Keep N PHR anonymized (default: %u)</source>
-        <translation>Keep N PHR anonymized (default: %u)</translation>
+        <source>Keep N NCX anonymized (default: %u)</source>
+        <translation>Keep N NCX anonymized (default: %u)</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -5551,7 +5551,7 @@ for example: alertnotify=echo %%s | mail -s &quot;NodeCircle Alert&quot; admin@f
     </message>
     <message>
         <source>Enable automatic wallet backups triggered after each zPhr minting (0-1, default: %u)</source>
-        <translation>zPHRへの変換後自動でウォレットをバックアップする( 0-1, デフォルト: %u)</translation>
+        <translation>zNCXへの変換後自動でウォレットをバックアップする( 0-1, デフォルト: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -5734,7 +5734,7 @@ for example: alertnotify=echo %%s | mail -s &quot;NodeCircle Alert&quot; admin@f
     <name>zphrcontroldialog</name>
     <message>
         <source>Select zPhr to Spend</source>
-        <translation>送金したいzPHRを選択</translation>
+        <translation>送金したいzNCXを選択</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -5752,12 +5752,12 @@ for example: alertnotify=echo %%s | mail -s &quot;NodeCircle Alert&quot; admin@f
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>PHR which were anonymized via Zerocin Protocol</source>
-        <translation>ゼロコインプロトコルにより匿名化されるPHR</translation>
+        <source>NCX which were anonymized via Zerocin Protocol</source>
+        <translation>ゼロコインプロトコルにより匿名化されるNCX</translation>
     </message>
     <message>
-        <source>Zerocoin PHR (zPHR)</source>
-        <translation>ゼロコイン PHR (zPHR)</translation>
+        <source>Zerocoin NCX (zNCX)</source>
+        <translation>ゼロコイン NCX (zNCX)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -5769,7 +5769,7 @@ for example: alertnotify=echo %%s | mail -s &quot;NodeCircle Alert&quot; admin@f
     </message>
     <message>
         <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>zPHRへ変換したいPHRの枚数を入力</translation>
+        <translation>zNCXへ変換したいNCXの枚数を入力</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -5817,11 +5817,11 @@ for example: alertnotify=echo %%s | mail -s &quot;NodeCircle Alert&quot; admin@f
     </message>
     <message>
         <source>zPhr Control</source>
-        <translation>zPHR コントロール</translation>
+        <translation>zNCX コントロール</translation>
     </message>
     <message>
         <source>zPhr Selected:</source>
-        <translation>選択された zPHR:</translation>
+        <translation>選択された zNCX:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -5836,18 +5836,18 @@ for example: alertnotify=echo %%s | mail -s &quot;NodeCircle Alert&quot; admin@f
         <translation>ゼロコインを送金</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPHR for spending</source>
-        <translation>利用できるzPHR</translation>
+        <source>Available (mature and spendable) zNCX for spending</source>
+        <translation>利用できるzNCX</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>利用可能な残高:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPHR for spending
+        <source>Available (mature and spendable) zNCX for spending
 
-zPHR are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>zPHRは20確認と同じdenominationでの3変換がされたのちに利用可能になります</translation>
+zNCX are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>zNCXは20確認と同じdenominationでの3変換がされたのちに利用可能になります</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -5891,7 +5891,7 @@ zPHR are mature when they have more than 20 confirmations AND more than 2 mints 
     </message>
     <message>
         <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>お釣りをzPHRへ変換(追加で手数料がかかります)</translation>
+        <translation>お釣りをzNCXへ変換(追加で手数料がかかります)</translation>
     </message>
     <message>
         <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
@@ -5910,8 +5910,8 @@ zPHR are mature when they have more than 20 confirmations AND more than 2 mints 
         <translation>利用できるゼロコイン残高の情報.</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zPHR</source>
-        <translation>未確認・未成熟なzPHRも含んだ全残高</translation>
+        <source>Total Balance including unconfirmed and immature zNCX</source>
+        <translation>未確認・未成熟なzNCXも含んだ全残高</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -5919,11 +5919,11 @@ zPHR are mature when they have more than 20 confirmations AND more than 2 mints 
     </message>
     <message>
         <source>Denominations with value 1:</source>
-        <translation>1 zPHR の塊(denomination):</translation>
+        <translation>1 zNCX の塊(denomination):</translation>
     </message>
     <message>
         <source>Denom. with value 1:</source>
-        <translation>1 zPHR のdenom.:</translation>
+        <translation>1 zNCX のdenom.:</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -5933,59 +5933,59 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
     </message>
     <message>
         <source>Denominations with value 5:</source>
-        <translation>5 zPHR の塊(denomination):</translation>
+        <translation>5 zNCX の塊(denomination):</translation>
     </message>
     <message>
         <source>Denom. with value 5:</source>
-        <translation>5 zPHR のdenom.:</translation>
+        <translation>5 zNCX のdenom.:</translation>
     </message>
     <message>
         <source>Denominations with value 10:</source>
-        <translation>10 zPHR の塊(denomination):</translation>
+        <translation>10 zNCX の塊(denomination):</translation>
     </message>
     <message>
         <source>Denom. with value 10:</source>
-        <translation>10 zPHR のdenom.:</translation>
+        <translation>10 zNCX のdenom.:</translation>
     </message>
     <message>
         <source>Denominations with value 50:</source>
-        <translation>50 zPHR の塊(denomination):</translation>
+        <translation>50 zNCX の塊(denomination):</translation>
     </message>
     <message>
         <source>Denom. with value 50:</source>
-        <translation>50 zPHR のdenom.:</translation>
+        <translation>50 zNCX のdenom.:</translation>
     </message>
     <message>
         <source>Denominations with value 100:</source>
-        <translation>100 zPHR の塊(denomination):</translation>
+        <translation>100 zNCX の塊(denomination):</translation>
     </message>
     <message>
         <source>Denom. with value 100:</source>
-        <translation>100 zPHR のdenom.:</translation>
+        <translation>100 zNCX のdenom.:</translation>
     </message>
     <message>
         <source>Denominations with value 500:</source>
-        <translation>500 zPHR の塊(denomination):</translation>
+        <translation>500 zNCX の塊(denomination):</translation>
     </message>
     <message>
         <source>Denom. with value 500:</source>
-        <translation>500 zPHR のdenom.:</translation>
+        <translation>500 zNCX のdenom.:</translation>
     </message>
     <message>
         <source>Denominations with value 1000:</source>
-        <translation>1000 zPHR の塊(denomination):</translation>
+        <translation>1000 zNCX の塊(denomination):</translation>
     </message>
     <message>
         <source>Denom. with value 1000:</source>
-        <translation>1000 zPHR のdenom.:</translation>
+        <translation>1000 zNCX のdenom.:</translation>
     </message>
     <message>
         <source>Denominations with value 5000:</source>
-        <translation>5000 zPHR の塊(denomination):</translation>
+        <translation>5000 zNCX の塊(denomination):</translation>
     </message>
     <message>
         <source>Denom. with value 5000:</source>
-        <translation>5000 zPHR のdenom.:</translation>
+        <translation>5000 zNCX のdenom.:</translation>
     </message>
     <message>
         <source>Priority:</source>
@@ -6131,8 +6131,8 @@ Please be patient after clicking import.</source>
         <translation>アドレス / 枚数:</translation>
     </message>
     <message>
-        <source>Add destinations to send PHR to</source>
-        <translation>PHRを送る宛先を追加</translation>
+        <source>Add destinations to send NCX to</source>
+        <translation>NCXを送る宛先を追加</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>

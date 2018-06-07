@@ -59,7 +59,7 @@
        <item row="1" column="0">
         <widget class="QLabel" name="labelZPhr">
          <property name="text">
-          <string>zPHR</string>
+          <string>zNCX</string>
          </property>
         </widget>
        </item>

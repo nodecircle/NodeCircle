@@ -142,7 +142,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "12 September 2017";
+        const char* pszTimestamp = "June 12th, 2018 American President meets with North Korean leader for first time.";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -157,11 +157,11 @@ public:
         genesis.nNonce = 12345;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"));
-        assert(genesis.hashMerkleRoot == uint256("0x894177137a45952cfed89dd395e7fc85208a53548f34defc7c1a85cb0736b3a3"));
+        assert(hashGenesisBlock == uint256("0x394db1840d9c346214a20cc6fbd107474d487cbc8de85a912aa70422b6d069b5"));
+        assert(genesis.hashMerkleRoot == uint256("0x847bb3f5c0c8ab60ee1e8a9343b6be0ea28e3f36244c5d1bfb8853ebf5998ffb"));
 
-        vSeeds.push_back(CDNSSeedData("0", "dns0.nodecircle.io")); // run by Moonshot
-        vSeeds.push_back(CDNSSeedData("1", "nodecircle.seed.rho.industries")); // run by Julian Meyer (meyer9)
+        // vSeeds.push_back(CDNSSeedData("0", "dns0.nodecircle.io")); // run by Moonshot
+        // vSeeds.push_back(CDNSSeedData("1", "nodecircle.seed.rho.industries")); // run by Julian Meyer (meyer9)
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 55);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
@@ -183,17 +183,12 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04659d53bd8f7ad9d34a17281febedac754e5a6eb136142d3a9c6c0ea21b6ed7498ceb3d872eed00ae755f7aeadaeb1d9ab5e1a8f1e7efcd0ddcb39d4623c12790";
+        strSporkKey = "04b770bcf8175becb69e001ebac287b498d6b26d0363c1c2ad9778e288d722ee4ba82e1e6300ce93647148203cd6d17ed0e5ceef21e01d6ac29b8d31432f914cc9";
         strObfuscationPoolDummyAddress = "PCYiHgGJJ6xGHqivmdZrYjRnhaYf6AJ2Mp";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
 
         /** Zerocoin */
-        zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
-            "4069182906412495150821892985591491761845028084891200728449926873928072877767359714183472702618963750149718246911"
-            "6507761337985909570009733045974880842840179742910064245869181719511874612151517265463228221686998754918242243363"
-            "7259085141865462043576798423387184774447920739934236584823824281198163815010674810451660377306056201619676256133"
-            "8441436038339044149526344321901146575444541784240209246165157233507787077498171257724679629263863563732899121548"
-            "31438167899885040445364023527381951378636564391212010397122822120720357";
+        zerocoinModulus ="C7970CEEDCC3B0754490201A7AA613CD73911081C790F5F1A8726F463550BB5B7FF0DB8E1EA1189EC72F93D1650011BD721AEEACC2ACDE32A04107F0648C2813A31F5B0B7765FF8B44B4B6FFC93384B646EB09C7CF5E8592D40EA33C80039F35B4F14A04B51F7BFD781BE4D1673164BA8EB991C2C4D730BBBE35F592BDEF524AF7E8DAEFD26C66FC02C479AF89D64D373F442709439DE66CEB955F3EA37D5159F6135809F85334B5CB1813ADDC80CD05609F10AC6A95AD65872C909525BDAD32BC729592642920F24C61DC5B3C3B7923E56B16A4D9D373D8721F24A3FC0F1B3131F55615172866BCCC30F95054C824E733A5EB6817F7BC16399D48C6361CC7E5";
         nMaxZerocoinSpendsPerTransaction = 7; // Assume about 20kb each
         nMinZerocoinMintFee = 1 * CENT; //high fee required for zerocoin mints
         nMintRequiredConfirmations = 20; //the maximum amount of confirmations until accumulated in 19
@@ -244,7 +239,7 @@ public:
         genesis.nNonce = 12345;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"));
+        assert(hashGenesisBlock == uint256("0x394db1840d9c346214a20cc6fbd107474d487cbc8de85a912aa70422b6d069b5"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -311,7 +306,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 18777;
-        assert(hashGenesisBlock == uint256("0x2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"));
+        assert(hashGenesisBlock == uint256("0x394db1840d9c346214a20cc6fbd107474d487cbc8de85a912aa70422b6d069b5"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.

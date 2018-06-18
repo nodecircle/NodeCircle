@@ -160,7 +160,7 @@ public:
         assert(hashGenesisBlock == uint256("0x394db1840d9c346214a20cc6fbd107474d487cbc8de85a912aa70422b6d069b5"));
         assert(genesis.hashMerkleRoot == uint256("0x847bb3f5c0c8ab60ee1e8a9343b6be0ea28e3f36244c5d1bfb8853ebf5998ffb"));
 
-        // vSeeds.push_back(CDNSSeedData("0", "dns0.nodecircle.io")); // run by Moonshot
+        vSeeds.push_back(CDNSSeedData("0", "seed.nodecircle.io"));
         // vSeeds.push_back(CDNSSeedData("1", "nodecircle.seed.rho.industries")); // run by Julian Meyer (meyer9)
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 55);

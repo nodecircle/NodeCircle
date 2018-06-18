@@ -226,10 +226,10 @@ QT_TRANSLATE_NOOP("nodecircle-core", ""
 QT_TRANSLATE_NOOP("nodecircle-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("nodecircle-core", "(11771 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("nodecircle-core", "(18775 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("nodecircle-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("nodecircle-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("nodecircle-core", "(must be 11771 for mainnet)"),
+QT_TRANSLATE_NOOP("nodecircle-core", "(must be 18775 for mainnet)"),
 QT_TRANSLATE_NOOP("nodecircle-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("nodecircle-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("nodecircle-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),

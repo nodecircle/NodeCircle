@@ -54,12 +54,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (     0, uint256("2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"))
-    (  1000, uint256("8defd49579d63545f9e8cdda31f8503e0513328ca3f7428f33a915258c764d15"))
-    ( 10000, uint256("6af2431daa7456e4620e9493091648eeaac8ddfd53d8cff8101c26806e301d9a"))
-    ( 90000, uint256("a883d86273f02cb19252a878d1e0bda1e5321140480b08e3df9544d7b3d1ce56"))
-    (152000, uint256("4dc1a3eb7d17bab4e7f5768e927c9666ba760d6882d3b600519fdd7b83f65610"))
-    (200000, uint256("9260e1eb2d3851bccd2794e2c61c29af91fcd4b56ba207a4b9a5b1e79b53fb10"));
+    (     0, uint256("394db1840d9c346214a20cc6fbd107474d487cbc8de85a912aa70422b6d069b5"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -70,7 +65,7 @@ static const Checkpoints::CCheckpointData data = {
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0x2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"));
+    boost::assign::map_list_of(0, uint256("394db1840d9c346214a20cc6fbd107474d487cbc8de85a912aa70422b6d069b5"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     1504595227,
@@ -78,7 +73,7 @@ static const Checkpoints::CCheckpointData dataTestnet = {
     250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("0x2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"));
+    boost::assign::map_list_of(0, uint256("394db1840d9c346214a20cc6fbd107474d487cbc8de85a912aa70422b6d069b5"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
     1504595227,
@@ -265,7 +260,6 @@ public:
 
         nPoolMaxTransactions = 2;
         strSporkKey = "04659d53bd8f7ad9d34a17281febedac754e5a6eb136142d3a9c6c0ea21b6ed7498ceb3d872eed00ae755f7aeadaeb1d9ab5e1a8f1e7efcd0ddcb39d4623c12790";
-        strObfuscationPoolDummyAddress = "PCYiHgGJJ6xGHqivmdZrYjRnhaYf6AJ2Mp";
         nStartMasternodePayments = 1505224800; //Fri, 09 Jan 2015 21:05:58 GMT
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                        // here because we only have a 8 block finalization window on testnet

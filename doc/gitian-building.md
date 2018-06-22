@@ -53,10 +53,10 @@ Please refer to the following documents to set up the operating systems and Giti
 Getting and building the inputs
 --------------------------------
 
-At this point you have two options, you can either use the automated script (found in [https://github.com/nodecircleproject/nodecircle/blob/master/contrib/gitian-build.sh](https://github.com/nodecircleproject/nodecircle/blob/master/contrib/gitian-build.sh), only works in Debian/Ubuntu) or you could manually do everything by following this guide.
+At this point you have two options, you can either use the automated script (found in [https://github.com/nodecircle/nodecircle/blob/master/contrib/gitian-build.sh](https://github.com/nodecircle/nodecircle/blob/master/contrib/gitian-build.sh), only works in Debian/Ubuntu) or you could manually do everything by following this guide.
 If you are using the automated script, then run it with the `--setup` command. Afterwards, run it with the `--build` command (example: `contrib/gitian-build.sh -b signer 0.15.0`). Otherwise ignore this.
 
-Follow the instructions in [https://github.com/nodecircleproject/nodecircle/blob/master/doc/release-process.md](https://github.com/nodecircleproject/nodecircle/blob/master/doc/release-process.md#fetch-and-create-inputs-first-time-or-when-dependency-versions-change)
+Follow the instructions in [https://github.com/nodecircle/nodecircle/blob/master/doc/release-process.md](https://github.com/nodecircle/nodecircle/blob/master/doc/release-process.md#fetch-and-create-inputs-first-time-or-when-dependency-versions-change)
 in the nodecircle repository under 'Fetch and create inputs' to install sources which require
 manual intervention. Also optionally follow the next step: 'Seed the Gitian sources cache
 and offline git repositories' which will fetch the remaining files required for building
@@ -66,7 +66,7 @@ Building NodeCircle Core
 ----------------
 
 To build NodeCircle Core (for Linux, OS X and Windows) just follow the steps under 'perform
-Gitian builds' in [https://github.com/nodecircleproject/nodecircle/blob/master/doc/release-process.md](https://github.com/nodecircleproject/nodecircle/blob/master/doc/release-process.md#setup-and-perform-gitian-builds) in the nodecircle repository.
+Gitian builds' in [https://github.com/nodecircle/nodecircle/blob/master/doc/release-process.md](https://github.com/nodecircle/nodecircle/blob/master/doc/release-process.md#setup-and-perform-gitian-builds) in the nodecircle repository.
 
 This may take some time as it will build all the dependencies needed for each descriptor.
 These dependencies will be cached after a successful build to avoid rebuilding them when possible.
@@ -85,7 +85,7 @@ Output from `gbuild` will look something like
     remote: Total 57959 (delta 0), reused 0 (delta 0), pack-reused 57958
     Receiving objects: 100% (57959/57959), 53.76 MiB | 484.00 KiB/s, done.
     Resolving deltas: 100% (41590/41590), done.
-    From https://github.com/nodecircleproject/nodecircle
+    From https://github.com/nodecircle/nodecircle
     ... (new tags, new branch etc)
     --- Building for trusty amd64 ---
     Stopping target if it is up
@@ -161,7 +161,7 @@ Then when building, override the remote URLs that gbuild would otherwise pull fr
 ```bash
 
 cd /some/root/path/
-git clone https://github.com/nodecircleproject/nodecircle-detached-sigs.git
+git clone https://github.com/nodecircle/nodecircle-detached-sigs.git
 
 BTCPATH=/some/root/path/nodecircle
 SIGPATH=/some/root/path/nodecircle-detached-sigs
@@ -193,5 +193,5 @@ Uploading signatures
 ---------------------
 
 After building and signing you can push your signatures (both the `.assert` and `.assert.sig` files) to the
-[nodecircleproject/gitian.sigs](https://github.com/nodecircleproject/gitian.sigs/) repository, or if that's not possible create a pull
+[nodecircle/gitian.sigs](https://github.com/nodecircle/gitian.sigs/) repository, or if that's not possible create a pull
 request. You can also mail the files to Wladimir (laanwj@gmail.com) and he will commit them.

@@ -28,7 +28,7 @@ packages:
 - "python-setuptools"
 - "fonts-tuffy"
 remotes:
-- "url": "https://github.com/nodecircleproject/nodecircle.git"
+- "url": "https://github.com/nodecircle/nodecircle.git"
   "dir": "nodecircle"
 files:
 - "MacOSX10.11.sdk.tar.gz"

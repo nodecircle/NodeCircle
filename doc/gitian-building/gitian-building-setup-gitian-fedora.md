@@ -80,8 +80,8 @@ Clone the git repositories for nodecircle and Gitian.
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
 git clone https://github.com/nodecircle/nodecircle
-git clone https://github.com/nodecircleproject/gitian.sigs.git
-git clone https://github.com/nodecircleproject/nodecircle-detached-sigs.git
+git clone https://github.com/nodecircle/gitian.sigs.git
+git clone https://github.com/nodecircle/nodecircle-detached-sigs.git
 ```
 
 Setting up the Gitian image

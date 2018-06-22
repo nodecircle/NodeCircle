@@ -8,7 +8,7 @@ packages:
 - "libssl-dev"
 - "autoconf"
 remotes:
-- "url": "https://github.com/nodecircleproject/nodecircle-detached-sigs.git"
+- "url": "https://github.com/nodecircle/nodecircle-detached-sigs.git"
   "dir": "signature"
 files:
 - "osslsigncode-1.7.1.tar.gz"

@@ -46,7 +46,7 @@ Instructions: Homebrew
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/nodecircleproject/NodeCircle.git
+        git clone https://github.com/nodecircle/NodeCircle.git
         cd NodeCircle
 
 2.  Build nodecircled:
@@ -176,7 +176,7 @@ Next, switch into your Downloads folder:
 
 The next step is to download the current version of the wallet from Github and go into that directory:
 
-```git clone https://github.com/nodecircleproject/nodecircle.git```
+```git clone https://github.com/nodecircle/nodecircle.git```
 ```cd NodeCircle```
 
 Now set some configuration flags:

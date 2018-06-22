@@ -1,7 +1,7 @@
 NodeCircle Core integration/staging repository
 =====================================
 
-[![Build Status](https://travis-ci.org/nodecircleproject/NodeCircle.svg?branch=master)](https://travis-ci.org/nodecircleproject/NodeCircle)
+[![Build Status](https://travis-ci.org/nodecircle/NodeCircle.svg?branch=master)](https://travis-ci.org/nodecircle/NodeCircle)
 
 NodeCircle is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
 - Anonymized transactions using zerocoin technology

@@ -9,7 +9,7 @@ NodeCircle Core version 1.2.2 is now available from:
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/nodecircleproject/nodecircle/issues
+  https://github.com/nodecircle/nodecircle/issues
 
 
 How to Upgrade

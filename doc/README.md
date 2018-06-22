@@ -42,7 +42,7 @@ The following are developer notes on how to build NodeCircle on your native plat
 
 Development
 ---------------------
-The NodeCircle repo's [root README](https://github.com/nodecircleproject/NodeCircle/blob/master/README.md) contains relevant information on the development process and automated testing.
+The NodeCircle repo's [root README](https://github.com/nodecircle/NodeCircle/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)

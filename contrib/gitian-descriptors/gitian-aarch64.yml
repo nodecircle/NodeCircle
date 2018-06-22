@@ -1,5 +1,5 @@
 ---
-name: "nodecircle-aarch64-1.2"
+name: "nodecircle-aarch64-1.0"
 enable_cache: true
 suites:
 - "xenial"

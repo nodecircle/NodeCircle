@@ -1,5 +1,5 @@
 ---
-name: "nodecircle-linux-1.2"
+name: "nodecircle-linux-1.0"
 enable_cache: true
 suites:
 - "trusty"

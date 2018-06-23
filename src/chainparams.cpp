@@ -156,6 +156,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x847bb3f5c0c8ab60ee1e8a9343b6be0ea28e3f36244c5d1bfb8853ebf5998ffb"));
 
         vSeeds.push_back(CDNSSeedData("0", "seed.nodecircle.io"));
+        vSeeds.push_back(CDNSSeedData("1", "seed1.nodecircle.io"));
         // vSeeds.push_back(CDNSSeedData("1", "nodecircle.seed.rho.industries")); // run by Julian Meyer (meyer9)
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 55);

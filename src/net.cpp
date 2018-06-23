@@ -105,7 +105,7 @@ CCriticalSection cs_vAddedNodes;
 NodeId nLastNodeId = 0;
 CCriticalSection cs_nLastNodeId;
 
-static CSemanodecircle* semOutbound = NULL;
+static CSemaphore* semOutbound = NULL;
 boost::condition_variable messageHandlerCondition;
 
 // Signals for message handling
@@ -1294,7 +1294,7 @@ void static ProcessOneShot()
         vOneShots.pop_front();
     }
     CAddress addr;
-    CSemanodecircleGrant grant(*semOutbound, true);
+    CSemaphoreGrant grant(*semOutbound, true);
     if (grant) {
         if (!OpenNetworkConnection(addr, &grant, strDest.c_str(), true))
             AddOneShot(strDest);
@@ -1325,7 +1325,7 @@ void ThreadOpenConnections()
 
         MilliSleep(500);
 
-        CSemanodecircleGrant grant(*semOutbound);
+        CSemaphoreGrant grant(*semOutbound);
         boost::this_thread::interruption_point();
 
         // Add seed nodes if DNS seeds are all down (an infrastructure attack?).
@@ -1411,7 +1411,7 @@ void ThreadOpenAddedConnections()
             }
             BOOST_FOREACH (string& strAddNode, lAddresses) {
                 CAddress addr;
-                CSemanodecircleGrant grant(*semOutbound);
+                CSemaphoreGrant grant(*semOutbound);
                 OpenNetworkConnection(addr, &grant, strAddNode.c_str());
                 MilliSleep(500);
             }
@@ -1453,7 +1453,7 @@ void ThreadOpenAddedConnections()
                         }
         }
         BOOST_FOREACH (vector<CService>& vserv, lservAddressesToAdd) {
-            CSemanodecircleGrant grant(*semOutbound);
+            CSemaphoreGrant grant(*semOutbound);
             OpenNetworkConnection(CAddress(vserv[i % vserv.size()]), &grant);
             MilliSleep(500);
         }
@@ -1462,7 +1462,7 @@ void ThreadOpenAddedConnections()
 }
 
 // if successful, this moves the passed grant to the constructed node
-bool OpenNetworkConnection(const CAddress& addrConnect, CSemanodecircleGrant* grantOutbound, const char* pszDest, bool fOneShot)
+bool OpenNetworkConnection(const CAddress& addrConnect, CSemaphoreGrant* grantOutbound, const char* pszDest, bool fOneShot)
 {
     //
     // Initiate outbound network connection
@@ -1729,9 +1729,9 @@ void StartNode(boost::thread_group& threadGroup, CScheduler& scheduler)
     fAddressesInitialized = true;
 
     if (semOutbound == NULL) {
-        // initialize semanodecircle
+        // initialize Semaphore
         int nMaxOutbound = min(MAX_OUTBOUND_CONNECTIONS, nMaxConnections);
-        semOutbound = new CSemanodecircle(nMaxOutbound);
+        semOutbound = new CSemaphore(nMaxOutbound);
     }
 
     if (pnodeLocalHost == NULL)

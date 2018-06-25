@@ -159,7 +159,7 @@ public:
         vSeeds.push_back(CDNSSeedData("1", "seed1.nodecircle.io"));
         // vSeeds.push_back(CDNSSeedData("1", "nodecircle.seed.rho.industries")); // run by Julian Meyer (meyer9)
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 55);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 21);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 212);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
@@ -179,7 +179,7 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04b770bcf8175becb69e001ebac287b498d6b26d0363c1c2ad9778e288d722ee4ba82e1e6300ce93647148203cd6d17ed0e5ceef21e01d6ac29b8d31432f914cc9";
+        strSporkKey = "04901713d0a0bf297bbb5b1dff0e0706fcb774c2a11de53e2d651aa0cb2ae56609a057e04b3ff4626e3a53d56905beffbe743da23e059d44bcefa3593abb39fb24";
         strObfuscationPoolDummyAddress = "PCYiHgGJJ6xGHqivmdZrYjRnhaYf6AJ2Mp";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
 

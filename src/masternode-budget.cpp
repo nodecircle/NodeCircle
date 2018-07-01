@@ -847,7 +847,7 @@ CAmount CBudgetManager::GetTotalBudget(int nHeight)
         return ((nSubsidy / 100) * 10) * 146;
     }
 
-    return GetBlockValue(nHeight) * 0.1;
+    return GetBlockValue(nHeight) * 0.1 * 1440 * 30;
 }
 
 void CBudgetManager::NewBlock()

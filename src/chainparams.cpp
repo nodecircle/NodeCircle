@@ -137,7 +137,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "June 12th, 2018 American President meets with North Korean leader for first time.";
+        const char* pszTimestamp = "June 12th, 2018 - American President meets with North Korean leader for first time.";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -152,8 +152,8 @@ public:
         genesis.nNonce = 12345;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x394db1840d9c346214a20cc6fbd107474d487cbc8de85a912aa70422b6d069b5"));
-        assert(genesis.hashMerkleRoot == uint256("0x847bb3f5c0c8ab60ee1e8a9343b6be0ea28e3f36244c5d1bfb8853ebf5998ffb"));
+        assert(hashGenesisBlock == uint256("0xf5dfafb69081ddb39bd3d25e1bf651cc0c15462dad4a5e1f388e8ba9c4798526"));
+        assert(genesis.hashMerkleRoot == uint256("0xdc7034ff3119a60f18785c21eb08977424fc897f60e765f322d6a2f99aa4a8f2"));
 
         vSeeds.push_back(CDNSSeedData("0", "seed.nodecircle.io"));
         vSeeds.push_back(CDNSSeedData("1", "seed1.nodecircle.io"));
@@ -235,8 +235,6 @@ public:
         genesis.nNonce = 12345;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x394db1840d9c346214a20cc6fbd107474d487cbc8de85a912aa70422b6d069b5"));
-
         vFixedSeeds.clear();
         vSeeds.clear();
 
@@ -301,7 +299,6 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 18777;
-        assert(hashGenesisBlock == uint256("0x394db1840d9c346214a20cc6fbd107474d487cbc8de85a912aa70422b6d069b5"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
